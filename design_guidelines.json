@@ -1,0 +1,125 @@
+{
+  "theme_archetype": {
+    "primary": "Archetype 4/5 Hybrid (Swiss & High-Contrast / Luxury)",
+    "mode": "dark",
+    "rationale": "The user explicitly requested a pure black background (#000000) with a bold, premium, slightly rebellious 'expensive' agency feel. Combining Swiss typography (Inter 900) with Luxury dark mode elements matches the Overdose/Linear/Active Theory inspiration."
+  },
+  "colors": {
+    "background": "#000000",
+    "primary_text": "#FFFFFF",
+    "secondary_text": "#A0A0A0",
+    "accent": "#4F46E5",
+    "accent_hover": "#6366F1",
+    "borders": "rgba(255, 255, 255, 0.08)",
+    "cards": "rgba(255, 255, 255, 0.03)"
+  },
+  "typography": {
+    "family": {
+      "headings": "Inter, sans-serif",
+      "body": "Inter, sans-serif"
+    },
+    "weights": {
+      "headings": "900",
+      "body": "400",
+      "body_medium": "500"
+    },
+    "scale": {
+      "hero": "text-[80px] leading-[0.9] md:text-[100px] lg:text-[120px] tracking-tighter",
+      "section_headings": "text-[48px] leading-[1.1] md:text-[56px] lg:text-[64px] tracking-tight",
+      "body": "text-[18px] md:text-[20px] leading-relaxed",
+      "labels": "text-xs md:text-sm uppercase tracking-[0.2em] font-medium text-[#A0A0A0]"
+    }
+  },
+  "layout_and_spacing": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_padding": "py-24 md:py-32 lg:py-40",
+    "grid_system": "Bento Grid and Swiss Asymmetry",
+    "card_style": "bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.08)] backdrop-blur-sm"
+  },
+  "sections_blueprint": [
+    {
+      "name": "Header",
+      "details": "Fixed header. Starts completely transparent. On scroll, transitions to glassmorphism: `backdrop-blur-xl bg-black/60 border-b border-[rgba(255,255,255,0.08)]`."
+    },
+    {
+      "name": "Hero",
+      "details": "Massive headline: 'We Don't Follow Trends. We Create Them.' Center or Left-aligned with text-reveal (character-by-character). Abstract dark purple 3D shapes floating in the background via parallax. Magnetic primary CTA button."
+    },
+    {
+      "name": "Services",
+      "details": "Grid of 8 large cards (Growth Marketing, Performance Marketing, SEO, AI SEO, LinkedIn Marketing, Brand Strategy, Content Production, Marketing Automation). Hover effect: subtle indigo glow `hover:border-[#4F46E5] transition-colors duration-500`."
+    },
+    {
+      "name": "Case Studies",
+      "details": "Full-screen horizontal scroll using GSAP ScrollTrigger (or Framer Motion useScroll). Large image cards showcasing premium digital dashboards/work."
+    },
+    {
+      "name": "Why Adcom",
+      "details": "Animated counters triggered on scroll: 10+ Brands, 4+ Years, Millions Revenue, Thousands Leads. Minimalist typography."
+    },
+    {
+      "name": "Process",
+      "details": "4-step vertical or alternating timeline: 01 Discovery, 02 Strategy, 03 Creation, 04 Growth. Sticky scroll or connecting animated lines."
+    },
+    {
+      "name": "Testimonials",
+      "details": "Premium carousel (use Embla or Swiper, or framer-motion drag). Large typography for quotes. Client details with modern office dark lighting backgrounds or clean avatars."
+    },
+    {
+      "name": "Contact",
+      "details": "Massive CTA 'Let's Build Something That Grows.' Minimalist high-converting form customized to pure dark mode."
+    },
+    {
+      "name": "Footer",
+      "details": "Massive 'ADCOM' branding (text-[10vw]). Grid layout for links. Darker contrast."
+    }
+  ],
+  "motion_choreography": {
+    "engine": "GSAP + ScrollTrigger, or Framer Motion",
+    "hero_reveal": "Staggered character-by-character reveal for the hero headline. (y: 100%, opacity: 0 -> y: 0, opacity: 1).",
+    "scroll_linked": "Horizontal scroll for Case Studies. Parallax on hero abstract shapes.",
+    "hover_effects": "Magnetic buttons (using framer-motion or GSAP tracking mouse). Subtle border glow on cards (`hover:border-[#6366F1] transition-colors duration-300`).",
+    "image_masking": "Images reveal with a clip-path sliding effect (`clip-path: inset(0 100% 0 0)` to `inset(0 0 0 0)`)."
+  },
+  "media": {
+    "hero_backgrounds": [
+      {
+        "url": "https://images.unsplash.com/photo-1658937364065-60f3f6818724?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRhcmslMjBwdXJwbGUlMjAzZCUyMHJlbmRlcnxlbnwwfHx8cHVycGxlfDE3ODEwMDIzMTF8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract purple wave background, use with low opacity/blend mode"
+      }
+    ],
+    "case_studies": [
+      {
+        "url": "https://images.unsplash.com/photo-1704188646899-4198ab26341c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBvZmZpY2UlMjBzcGFjZSUyMGRhcmslMjBsaWdodGluZ3xlbnwwfHx8YmxhY2t8MTc4MTAwMjMwM3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Dark architecture for case study placeholder 1"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1538313577499-9b4571c1941c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwdHlwb2dyYXBoeSUyMHBvc3RlcnxlbnwwfHx8d2hpdGV8MTc4MTAwMjMxMXww&ixlib=rb-4.1.0&q=85",
+        "description": "Minimalist typography work for case study placeholder 2"
+      }
+    ],
+    "logos": [
+      {
+        "url": "https://images.unsplash.com/photo-1660792729078-9d32e2dbe45a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxjb21wYW55JTIwbG9nbyUyMGJyYW5kJTIwaWNvbnxlbnwwfHx8d2hpdGV8MTc4MTAwMjMwM3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Brand icon replacement"
+      }
+    ],
+    "office_lifestyle": [
+      {
+        "url": "https://images.unsplash.com/photo-1713638394242-9edf9cf943cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBvZmZpY2UlMjBzcGFjZSUyMGRhcmslMjBsaWdodGluZ3xlbnwwfHx8YmxhY2t8MTc4MTAwMjMwM3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Man looking out window - use for testimonial background or contact section"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "STRICT: Adhere entirely to the provided colors. Background MUST be pure #000000. Do NOT use slate/gray backgrounds.",
+    "STRICT: Use Inter font everywhere. Weight 900 for headings, 400-500 for body.",
+    "STRICT: Ensure heading sizes hit the exact scale: Hero 80-120px, Sections 48-64px.",
+    "STRICT: You are using .js and .jsx files. Do NOT use .tsx format.",
+    "STRICT: ALL interactive elements (buttons, links, form inputs) MUST include data-testid attributes (e.g. data-testid=\"contact-submit-button\").",
+    "Implement the 'Magnetic Button' effect using Framer Motion.",
+    "Implement the Horizontal Scroll section using framer-motion useScroll or GSAP ScrollTrigger for the Case Studies.",
+    "For components, build custom HTML/Tailwind structures to achieve the premium 'Awwwards' overlapping layout. Limit Shadcn to forms or complex interactive bits.",
+    "Testimonials must be an auto-scrolling marquee or premium carousel."
+  ]
+}
