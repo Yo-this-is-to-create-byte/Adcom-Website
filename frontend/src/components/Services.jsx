@@ -21,15 +21,17 @@ export default function Services() {
         <div className="flex items-end justify-between flex-wrap gap-6 mb-16">
           <div>
             <div className="text-xs md:text-sm uppercase tracking-[0.25em] text-[#A0A0A0] mb-6 flex items-center gap-3">
-              <span className="w-8 h-px bg-[#A0A0A0]" /> Services
+              <span className="w-8 h-px bg-[#A0A0A0]" /> Capabilities
             </div>
             <h2 className="font-display text-[48px] md:text-[56px] lg:text-[64px] leading-[1.05] tracking-tight max-w-3xl">
-              Eight disciplines.<br />
-              <span className="text-white/40">One revenue engine.</span>
+              Strategy, creative<br />
+              and performance —<br />
+              <span className="text-white/40">built as one engine.</span>
             </h2>
           </div>
           <p className="max-w-md text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed">
-            Every service is delivered by senior specialists — not pods, not juniors, not outsourced.
+            We don't sell services in silos. Every capability is wired into a
+            single growth system, owned by senior operators.
           </p>
         </div>
 
@@ -46,7 +48,7 @@ export default function Services() {
               className="group relative bg-black hover:bg-[rgba(255,255,255,0.03)] transition-colors duration-500 p-8 md:p-10 min-h-[280px] flex flex-col justify-between cursor-pointer"
             >
               <div className="flex items-start justify-between">
-                <div className="w-12 h-12 rounded-2xl bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] flex items-center justify-center group-hover:bg-[#4F46E5] group-hover:border-[#4F46E5] transition-colors duration-500">
+                <div className="w-12 h-12 rounded-2xl bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] flex items-center justify-center group-hover:bg-[#E11D2E] group-hover:border-[#E11D2E] transition-colors duration-500">
                   <s.Icon size={20} className="text-white" />
                 </div>
                 <ArrowUpRight size={18} className="text-white/30 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500" />

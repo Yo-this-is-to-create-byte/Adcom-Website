@@ -63,7 +63,7 @@ export default function Testimonials() {
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="relative"
             >
-              <Quote className="text-[#4F46E5] mb-6" size={36} />
+              <Quote className="text-[#E11D2E] mb-6" size={36} />
               <p className="font-display text-[28px] md:text-[40px] lg:text-[52px] leading-[1.15] tracking-tight max-w-5xl">
                 "{item.quote}"
               </p>

@@ -58,13 +58,13 @@ export default function Hero() {
       {/* Background orbs */}
       <motion.div
         style={{ y: y1 }}
-        className="orb bg-[#4F46E5] w-[500px] h-[500px] -top-40 -left-40 animate-pulse-slow"
+        className="orb bg-[#E11D2E] w-[500px] h-[500px] -top-40 -left-40 animate-pulse-slow"
       />
       <motion.div
         style={{ y: y2 }}
-        className="orb bg-[#6366F1] w-[400px] h-[400px] top-1/3 -right-40 animate-pulse-slow"
+        className="orb bg-[#F43F5E] w-[400px] h-[400px] top-1/3 -right-40 animate-pulse-slow"
       />
-      <div className="orb bg-[#312e81] w-[600px] h-[600px] bottom-0 left-1/3 opacity-30" />
+      <div className="orb bg-[#7f1d1d] w-[600px] h-[600px] bottom-0 left-1/3 opacity-30" />
 
       {/* Grid pattern */}
       <div
@@ -84,9 +84,9 @@ export default function Hero() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="flex items-center gap-3 mb-10"
         >
-          <span className="w-2 h-2 rounded-full bg-[#4F46E5] animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-[#E11D2E] animate-pulse" />
           <span className="text-xs md:text-sm uppercase tracking-[0.25em] text-[#A0A0A0] font-medium">
-            Independent Growth Studio · Est. 2021
+            A growth studio for ambitious brands
           </span>
         </motion.div>
 
@@ -100,7 +100,7 @@ export default function Hero() {
           </span>
           <span className="block">
             <CharReveal text="We " baseDelay={22} />
-            <span className="text-[#6366F1]">
+            <span className="text-[#F43F5E]">
               <CharReveal text="Create" baseDelay={25} />
             </span>{' '}
             <CharReveal text="Them." baseDelay={31} />
@@ -113,33 +113,38 @@ export default function Hero() {
           transition={{ delay: 1.4, duration: 0.8 }}
           className="mt-10 max-w-2xl text-[18px] md:text-[20px] leading-relaxed text-[#A0A0A0]"
         >
-          Growth marketing, branding, content and performance campaigns engineered
-          to scale ambitious businesses — quietly, relentlessly, profitably.
+          Adcom Media partners with category-defining founders to grow brands
+          through <span className="text-white">strategy</span>,{' '}
+          <span className="text-white">creative</span> and{' '}
+          <span className="text-white">performance</span> — engineered together,
+          measured in revenue.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.6, duration: 0.8 }}
-          className="mt-12 flex flex-col sm:flex-row gap-4 sm:items-center"
+          className="mt-12 flex flex-col sm:flex-row gap-6 sm:items-center"
         >
           <MagneticButton
             data-testid={HERO.primaryCta}
             onClick={() => go('contact')}
-            className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#4F46E5] hover:bg-[#6366F1] text-white text-sm font-semibold transition-colors duration-300"
+            className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#E11D2E] hover:bg-[#F43F5E] text-white text-sm font-semibold transition-colors duration-300"
           >
-            Start Your Project
+            Book a Strategy Call
             <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </MagneticButton>
 
-          <MagneticButton
+          <button
             data-testid={HERO.secondaryCta}
             onClick={() => go('case-studies')}
-            className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-[rgba(255,255,255,0.15)] hover:border-white text-white text-sm font-semibold transition-colors duration-300"
+            className="group inline-flex items-center gap-2 text-sm font-medium text-[#A0A0A0] hover:text-white transition-colors"
           >
-            View Work
-            <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-          </MagneticButton>
+            <span className="border-b border-[rgba(255,255,255,0.2)] group-hover:border-white pb-1 transition-colors">
+              See selected work
+            </span>
+            <ArrowUpRight size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+          </button>
         </motion.div>
       </motion.div>
 

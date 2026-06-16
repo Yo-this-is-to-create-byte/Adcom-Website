@@ -4,27 +4,27 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 const steps = [
   {
     n: '01',
-    title: 'Discovery',
-    desc: 'We embed inside your business. Customer interviews, data audits, competitive teardown and a brutally honest growth diagnostic.',
-    tag: 'Week 01–02',
+    title: 'Diagnose',
+    desc: 'We embed inside your business. Customer interviews, data audits, competitive teardown and a brutally honest growth diagnostic — the truth before the plan.',
+    tag: 'Phase 01',
   },
   {
     n: '02',
-    title: 'Strategy',
-    desc: 'Narrative, positioning, channel mix and a 90-day growth model with assumptions you can defend in front of your board.',
-    tag: 'Week 03–04',
+    title: 'Define',
+    desc: 'Positioning, narrative, channel mix and a 90-day growth model with assumptions you can defend in front of your board. No moodboards, no fluff.',
+    tag: 'Phase 02',
   },
   {
     n: '03',
-    title: 'Creation',
-    desc: 'Brand systems, content, campaigns, landing pages and creative built in-house — at the velocity modern growth demands.',
-    tag: 'Week 05–08',
+    title: 'Design & Build',
+    desc: 'Brand systems, content, campaigns, landing pages and creative built in-house — at the velocity modern growth demands and the quality serious brands require.',
+    tag: 'Phase 03',
   },
   {
     n: '04',
-    title: 'Growth',
-    desc: 'Live campaigns, weekly experimentation, lifecycle automations and monthly business reviews tied to revenue, not impressions.',
-    tag: 'Ongoing',
+    title: 'Deploy & Compound',
+    desc: 'Live campaigns, weekly experimentation, lifecycle automations and monthly business reviews tied to revenue — not impressions. The system that compounds.',
+    tag: 'Phase 04',
   },
 ];
 
@@ -40,7 +40,7 @@ function Row({ s, i, total }) {
       className="grid grid-cols-12 gap-6 md:gap-10 py-12 md:py-16 border-t border-[rgba(255,255,255,0.08)]"
     >
       <div className="col-span-12 md:col-span-2">
-        <div className="font-display text-[40px] md:text-[56px] text-[#6366F1] leading-none">{s.n}</div>
+        <div className="font-display text-[40px] md:text-[56px] text-[#F43F5E] leading-none">{s.n}</div>
         <div className="mt-3 text-xs uppercase tracking-[0.25em] text-[#A0A0A0]">{s.tag}</div>
       </div>
       <motion.div style={{ x }} className="col-span-12 md:col-span-7">
@@ -67,15 +67,16 @@ export default function Process() {
         <div className="mb-12 md:mb-20 grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-5">
             <div className="text-xs md:text-sm uppercase tracking-[0.25em] text-[#A0A0A0] mb-6 flex items-center gap-3">
-              <span className="w-8 h-px bg-[#A0A0A0]" /> Process
+              <span className="w-8 h-px bg-[#A0A0A0]" /> The Adcom Method
             </div>
             <h2 className="font-display text-[40px] md:text-[56px] lg:text-[64px] leading-[1.05] tracking-tight">
-              A method, not<br /><span className="text-white/40">a moodboard.</span>
+              A four-phase<br /><span className="text-white/40">operating system.</span>
             </h2>
           </div>
           <p className="lg:col-span-6 lg:col-start-7 text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed">
-            Every engagement runs through the same four-phase operating system —
-            calibrated to your stage, ambition and category dynamics.
+            Every engagement runs through the same proprietary method —
+            calibrated to your stage, ambition and category. It's the reason
+            our work compounds long after the retainer ends.
           </p>
         </div>
 

@@ -10,7 +10,7 @@ export default function Marquee() {
   return (
     <section className="relative py-12 border-y border-[rgba(255,255,255,0.08)] overflow-hidden">
       <div className="text-xs uppercase tracking-[0.25em] text-[#A0A0A0] text-center mb-6">
-        Trusted by category-defining brands
+        A few of the brands we've quietly grown
       </div>
       <div className="relative">
         <motion.div
@@ -20,7 +20,7 @@ export default function Marquee() {
         >
           {[...items, ...items].map((label, i) => (
             <div key={i} className="flex items-center gap-3 shrink-0">
-              <span className="w-2 h-2 rounded-full bg-[#4F46E5]" />
+              <span className="w-2 h-2 rounded-full bg-[#E11D2E]" />
               <span className="font-display text-2xl md:text-3xl tracking-tight text-white/80">
                 {label}
               </span>

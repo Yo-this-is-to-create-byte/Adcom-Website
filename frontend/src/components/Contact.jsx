@@ -37,7 +37,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative py-24 md:py-32 lg:py-40 overflow-hidden">
-      <div className="orb bg-[#4F46E5] w-[600px] h-[600px] -bottom-60 -left-40 opacity-30" />
+      <div className="orb bg-[#E11D2E] w-[600px] h-[600px] -bottom-60 -left-40 opacity-30" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
@@ -48,7 +48,7 @@ export default function Contact() {
             <h2 className="font-display text-[44px] md:text-[64px] lg:text-[88px] leading-[0.95] tracking-tighter">
               Let's build<br />
               something<br />
-              <span className="text-[#6366F1]">that grows.</span>
+              <span className="text-[#F43F5E]">that grows.</span>
             </h2>
             <p className="mt-8 text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed max-w-md">
               Tell us about your business and what you want to scale. We respond to every
@@ -58,7 +58,7 @@ export default function Contact() {
             <div className="mt-12 space-y-4 text-sm">
               <div className="flex items-center justify-between border-b border-[rgba(255,255,255,0.08)] pb-3">
                 <span className="text-[#A0A0A0] uppercase tracking-[0.2em] text-xs">Email</span>
-                <a href="mailto:hello@adcommedia.co" className="hover:text-[#6366F1] transition-colors">
+                <a href="mailto:hello@adcommedia.co" className="hover:text-[#F43F5E] transition-colors">
                   hello@adcommedia.co
                 </a>
               </div>
@@ -86,7 +86,7 @@ export default function Contact() {
                     transition={{ duration: 0.5 }}
                     className="py-16 text-center"
                   >
-                    <div className="mx-auto w-16 h-16 rounded-full bg-[#4F46E5] flex items-center justify-center mb-6">
+                    <div className="mx-auto w-16 h-16 rounded-full bg-[#E11D2E] flex items-center justify-center mb-6">
                       <Check size={28} />
                     </div>
                     <h3 className="font-display text-3xl md:text-4xl tracking-tight mb-3">
@@ -177,7 +177,7 @@ export default function Contact() {
                       type="submit"
                       data-testid={CONTACT.submitButton}
                       disabled={state === 'submitting'}
-                      className="group w-full md:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#4F46E5] hover:bg-[#6366F1] text-white text-sm font-semibold transition-colors duration-300 disabled:opacity-60"
+                      className="group w-full md:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#E11D2E] hover:bg-[#F43F5E] text-white text-sm font-semibold transition-colors duration-300 disabled:opacity-60"
                     >
                       {state === 'submitting' ? (
                         <>

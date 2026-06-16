@@ -45,10 +45,14 @@ export default function Header() {
           href="#top"
           data-testid={NAV.logoLink}
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-          className="flex items-center gap-2 group"
+          className="flex items-center group"
+          aria-label="Adcom Media — home"
         >
-          <div className="w-8 h-8 rounded-full bg-[#4F46E5] flex items-center justify-center font-black text-sm">A</div>
-          <span className="font-display text-lg tracking-tight">Adcom Media</span>
+          <img
+            src="https://customer-assets.emergentagent.com/job_adcom-vault/artifacts/25jd59u4_WhatsApp%20Image%202026-06-09%20at%204.34.49%20PM.jpeg"
+            alt="Adcom Media"
+            className="h-12 md:h-14 w-auto object-contain"
+          />
         </a>
 
         <nav className="hidden lg:flex items-center gap-10">
@@ -60,7 +64,7 @@ export default function Header() {
               className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-300 relative group"
             >
               {l.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#6366F1] group-hover:w-full transition-all duration-500" />
+              <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#F43F5E] group-hover:w-full transition-all duration-500" />
             </button>
           ))}
         </nav>
@@ -69,7 +73,7 @@ export default function Header() {
           <MagneticButton
             data-testid={NAV.ctaButton}
             onClick={() => go('contact')}
-            className="px-6 py-3 rounded-full bg-white text-black text-sm font-semibold hover:bg-[#6366F1] hover:text-white transition-colors duration-300"
+            className="px-6 py-3 rounded-full bg-white text-black text-sm font-semibold hover:bg-[#F43F5E] hover:text-white transition-colors duration-300"
           >
             Book Strategy Call
           </MagneticButton>

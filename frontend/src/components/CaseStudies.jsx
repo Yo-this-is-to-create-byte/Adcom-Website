@@ -8,20 +8,26 @@ const studies = [
     slug: 'finova',
     client: 'Finova',
     industry: 'Fintech',
-    tag: 'Growth + Performance',
-    title: 'From stealth to category challenger.',
-    metric: '12.4x ROAS',
-    metric2: '₹38Cr revenue',
+    tag: 'Strategy + Performance',
+    story:
+      'Finova came to us pre-launch with a clever product and a noisy category. We built the positioning, the funnel and the paid engine that turned them into a category challenger in under nine months.',
+    metric: '12.4x',
+    metricLabel: 'Blended ROAS',
+    metric2: '₹38Cr',
+    metric2Label: 'Revenue in Y1',
     image: 'https://images.unsplash.com/photo-1640161704729-cbe966a08476?auto=format&fit=crop&w=1600&q=80',
   },
   {
     slug: 'maison-noir',
     client: 'Maison Noir',
     industry: 'Luxury D2C',
-    tag: 'Brand Strategy + Content',
-    title: 'A wordless brand world that sells out drops in 6 hours.',
-    metric: '+340% AOV',
-    metric2: '92k waitlist',
+    tag: 'Brand + Content',
+    story:
+      'A wordless brand world for a luxury house that refused to look like anyone else. Cinematic content, an editorial site and a drop strategy that now sells out in hours.',
+    metric: '+340%',
+    metricLabel: 'AOV uplift',
+    metric2: '92k',
+    metric2Label: 'Drop waitlist',
     image: 'https://images.unsplash.com/photo-1620207418302-439b387441b0?auto=format&fit=crop&w=1600&q=80',
   },
   {
@@ -29,19 +35,25 @@ const studies = [
     client: 'Orbit',
     industry: 'B2B SaaS',
     tag: 'AI SEO + LinkedIn',
-    title: 'Owning the answer in every LLM that matters.',
-    metric: '8.1x pipeline',
-    metric2: '#1 in Perplexity',
+    story:
+      'Orbit was invisible in the AI answer layer. We rebuilt their content engine for LLM retrieval and founder-led LinkedIn — pipeline now compounds without paid spend.',
+    metric: '8.1x',
+    metricLabel: 'Inbound pipeline',
+    metric2: '#1',
+    metric2Label: 'Cited in Perplexity',
     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=80',
   },
   {
     slug: 'numa-wellness',
     client: 'Numa',
     industry: 'Wellness',
-    tag: 'Performance + Automation',
-    title: 'Subscription engine that scaled to seven figures monthly.',
-    metric: '4.7x LTV',
-    metric2: '63% retention',
+    tag: 'Performance + Lifecycle',
+    story:
+      'A subscription wellness brand stuck on a leaky funnel. We rebuilt acquisition, onboarding and retention into a single revenue system — and it has compounded every quarter since.',
+    metric: '4.7x',
+    metricLabel: 'Customer LTV',
+    metric2: '63%',
+    metric2Label: '12-mo retention',
     image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1600&q=80',
   },
   {
@@ -49,9 +61,12 @@ const studies = [
     client: 'Kavi Coffee',
     industry: 'F&B',
     tag: 'Brand + Content',
-    title: 'A coffee brand the internet refuses to scroll past.',
-    metric: '21M views',
-    metric2: '+540% DTC',
+    story:
+      'We rebuilt a quiet specialty coffee brand into the most-shared coffee feed in India. Every frame is shot in-house, every story leads back to product.',
+    metric: '21M',
+    metricLabel: 'Organic views',
+    metric2: '+540%',
+    metric2Label: 'DTC revenue',
     image: 'https://images.unsplash.com/photo-1559526324-c1f275fbfa32?auto=format&fit=crop&w=1600&q=80',
   },
 ];
@@ -77,7 +92,7 @@ export default function CaseStudies() {
               <span className="w-8 h-px bg-[#A0A0A0]" /> Selected Work
             </div>
             <h2 className="font-display text-[40px] md:text-[56px] lg:text-[64px] leading-[1.05] tracking-tight">
-              Case studies that read like<br /><span className="text-white/40">growth thrillers.</span>
+              Stories first.<br /><span className="text-white/40">Numbers second.</span>
             </h2>
           </div>
           <span className="text-xs uppercase tracking-[0.25em] text-[#A0A0A0] hidden md:block">
@@ -107,7 +122,7 @@ export default function CaseStudies() {
                   <span className="px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-[11px] uppercase tracking-[0.2em] border border-white/10">
                     {String(i + 1).padStart(2, '0')} · {s.industry}
                   </span>
-                  <span className="px-3 py-1.5 rounded-full bg-[#4F46E5]/90 text-[11px] uppercase tracking-[0.2em]">
+                  <span className="px-3 py-1.5 rounded-full bg-[#E11D2E]/90 text-[11px] uppercase tracking-[0.2em]">
                     {s.tag}
                   </span>
                 </div>
@@ -118,23 +133,23 @@ export default function CaseStudies() {
                     <div className="text-xs md:text-sm uppercase tracking-[0.25em] text-[#A0A0A0] mb-3">
                       {s.client}
                     </div>
-                    <h3 className="font-display text-2xl md:text-3xl lg:text-4xl leading-[1.05] tracking-tight max-w-md">
-                      {s.title}
-                    </h3>
+                    <p className="font-display text-lg md:text-xl lg:text-2xl leading-snug tracking-tight text-white/95 max-w-lg">
+                      {s.story}
+                    </p>
                   </div>
 
                   <div className="flex items-end justify-between gap-4">
-                    <div className="flex gap-6">
+                    <div className="flex gap-8">
                       <div>
-                        <div className="font-display text-2xl md:text-3xl text-[#6366F1]">{s.metric}</div>
-                        <div className="text-[10px] uppercase tracking-[0.2em] text-[#A0A0A0] mt-1">Result</div>
+                        <div className="font-display text-2xl md:text-3xl text-[#F43F5E]">{s.metric}</div>
+                        <div className="text-[10px] uppercase tracking-[0.2em] text-[#A0A0A0] mt-1">{s.metricLabel}</div>
                       </div>
                       <div>
                         <div className="font-display text-2xl md:text-3xl">{s.metric2}</div>
-                        <div className="text-[10px] uppercase tracking-[0.2em] text-[#A0A0A0] mt-1">Impact</div>
+                        <div className="text-[10px] uppercase tracking-[0.2em] text-[#A0A0A0] mt-1">{s.metric2Label}</div>
                       </div>
                     </div>
-                    <div className="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-[#6366F1] group-hover:text-white transition-colors duration-500">
+                    <div className="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-[#F43F5E] group-hover:text-white transition-colors duration-500">
                       <ArrowUpRight size={20} />
                     </div>
                   </div>
