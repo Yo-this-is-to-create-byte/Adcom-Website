@@ -18,7 +18,7 @@ const team = [
 ];
 
 const values = [
-  { t: 'Senior, by design.', d: 'No pods. No juniors on your account. The hands that sold the work do the work.' },
+  { t: 'Expert-led, by design.', d: 'No pods. No trainees on your account. The hands that sold the work do the work.' },
   { t: 'Owned, not outsourced.', d: 'Strategy, creative, media, lifecycle, built under one roof, accountable to one P&L.' },
   { t: 'Taste over volume.', d: 'We ship less, and we ship better. We would rather miss a brief than break a brand.' },
   { t: 'Numbers, ruthlessly.', d: 'We measure ourselves by your revenue, not by impressions, awards or invoice hours.' },
@@ -58,7 +58,7 @@ export default function AboutPage() {
               <span className="block text-[#F43F5E]">ambitious brands online.</span>
             </h1>
             <p className="mt-10 max-w-2xl text-[18px] md:text-[20px] leading-relaxed text-[#A0A0A0]">
-              Adcom Media is an independent, senior-only growth studio of strategists,
+              Adcom Media is an independent, performance-driven growth studio of strategists,
               marketers, designers and engineers. We partner with category-defining
               founders across India, the Middle East and the US, and we measure
               ourselves by the revenue we move.
@@ -80,7 +80,7 @@ export default function AboutPage() {
                   We started Adcom because<br />
                   <span className="text-white/40">the work had gotten worse,</span><br />
                   the layers had gotten <span className="text-[#F43F5E]">thicker</span>,<br />
-                  and senior hands had gotten <span className="text-[#F43F5E]">rare.</span>
+                  and expert hands had gotten <span className="text-[#F43F5E]">rare.</span>
                 </motion.h2>
                 <p className="mt-12 max-w-2xl text-[18px] md:text-[20px] leading-relaxed text-[#A0A0A0]">
                   Most modern agencies are organised to scale headcount. We are organised
@@ -132,7 +132,7 @@ export default function AboutPage() {
                 <span className="w-8 h-px bg-[#A0A0A0]" /> The studio
               </div>
               <h2 className="font-display text-[40px] md:text-[56px] lg:text-[64px] leading-[1.05] tracking-tight">
-                Senior operators.<br /><span className="text-white/40">Doing the work, on the work.</span>
+                Expert operators.<br /><span className="text-white/40">Doing the work, on the work.</span>
               </h2>
             </div>
 

@@ -45,7 +45,7 @@ export default function WhatsAppButton() {
                     Direct line · WhatsApp
                   </div>
                   <div className="font-display text-lg tracking-tight mt-1">
-                    Talk to a senior strategist.
+                    Talk to a lead strategist.
                   </div>
                 </div>
                 <button

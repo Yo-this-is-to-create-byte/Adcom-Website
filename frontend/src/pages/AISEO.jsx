@@ -21,13 +21,13 @@ const data = {
   pillars: {
     kicker: 'How we operate',
     title: 'Six disciplines.<br /><span class="text-white/40">One answer engine.</span>',
-    subtitle: 'AI SEO is not classic SEO with prompts taped on. It is a different operating model, and senior operators run all of it.',
+    subtitle: 'AI SEO is not classic SEO with prompts taped on. It is a different operating model, and expert operators run all of it.',
     pillars: [
       { title: 'Answer Engine Strategy', desc: 'Map the queries and prompts your buyers are actually asking inside LLMs, not just Google.', Icon: Bot },
       { title: 'Editorial Authority', desc: 'Long-form, original, citable editorial that LLMs retrieve and credit, not commodity blog content.', Icon: BookOpen },
       { title: 'Knowledge Graph & Schema', desc: 'Structured data, entity hygiene and schema that makes your brand machine-legible.', Icon: Database },
       { title: 'Classic SEO', desc: 'Technical SEO, topical authority and link relevance, the foundation answer engines still respect.', Icon: Search },
-      { title: 'Generative Content Ops', desc: 'In-house content engines that pair AI velocity with senior editorial judgement.', Icon: Sparkles },
+      { title: 'Generative Content Ops', desc: 'In-house content engines that pair AI velocity with expert editorial judgement.', Icon: Sparkles },
       { title: 'Answer-Layer Analytics', desc: 'Measurement for citations, retrievals and AI-driven traffic, built before everyone realises it matters.', Icon: BarChart3 },
     ],
   },

@@ -8,16 +8,16 @@ import Contact from '@/components/Contact';
 import CustomCursor from '@/components/CustomCursor';
 
 const roles = [
-  { title: 'Senior Growth Strategist', team: 'Growth', location: 'Bengaluru / Remote', type: 'Full-time' },
+  { title: 'Lead Growth Strategist', team: 'Growth', location: 'Bengaluru / Remote', type: 'Full-time' },
   { title: 'Performance Marketing Lead', team: 'Performance', location: 'Bengaluru', type: 'Full-time' },
-  { title: 'Brand Designer (Senior)', team: 'Brand', location: 'Remote', type: 'Full-time' },
+  { title: 'Brand Designer (Lead)', team: 'Brand', location: 'Remote', type: 'Full-time' },
   { title: 'AI SEO Editor', team: 'AI SEO', location: 'Remote', type: 'Full-time' },
   { title: 'Creative Producer', team: 'Content', location: 'Bengaluru', type: 'Full-time' },
   { title: 'Marketing Engineer', team: 'Automation', location: 'Remote', type: 'Full-time' },
 ];
 
 const principles = [
-  { t: 'Senior by default.', d: 'Every role is a senior role. We do not hire juniors to staff client accounts.' },
+  { t: 'Expert by default.', d: 'Every role demands real ownership. We do not staff client accounts with trainees.' },
   { t: 'Ownership, not headcount.', d: 'You will own outcomes end-to-end, not a sliver of someone else\'s scope.' },
   { t: 'Craft over churn.', d: 'We ship less, and we ship better. Long arcs, real depth, no agency-life burnout theatre.' },
 ];
@@ -43,7 +43,7 @@ export default function Careers() {
               <span className="text-xs uppercase tracking-[0.25em] text-[#A0A0A0]">Careers</span>
             </div>
             <h1 className="font-display text-[56px] sm:text-[80px] md:text-[100px] lg:text-[120px] leading-[0.9] tracking-tighter">
-              <span className="block">Senior hands.</span>
+              <span className="block">Expert hands.</span>
               <span className="block italic font-light text-white/40">Real work.</span>
               <span className="block text-[#F43F5E]">No layers.</span>
             </h1>
@@ -85,7 +85,7 @@ export default function Careers() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-end justify-between flex-wrap gap-6 mb-12">
               <h2 className="font-display text-[40px] md:text-[56px] lg:text-[64px] leading-[1.05] tracking-tight">
-                Open roles.<br /><span className="text-white/40">All senior.</span>
+                Open roles.<br /><span className="text-white/40">All expert.</span>
               </h2>
               <div className="text-[11px] font-mono uppercase tracking-[0.25em] text-[#A0A0A0]">
                 {roles.length} positions · Updated weekly

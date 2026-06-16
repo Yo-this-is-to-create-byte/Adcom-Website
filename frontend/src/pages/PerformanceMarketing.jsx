@@ -224,7 +224,7 @@ function Reality() {
 const pillars = [
   { slug: 'growth-strategy', title: 'Growth Strategy', desc: 'The thesis behind every rupee spent, channels, segments and unit economics that scale.', Icon: Target },
   { slug: 'creative-systems', title: 'Creative Systems', desc: 'Concept-led, modular ad systems that compound learning rather than burn out in a week.', Icon: Sparkles },
-  { slug: 'paid-acquisition', title: 'Paid Acquisition', desc: 'Senior media buying across Meta, Google, YouTube and emerging surfaces, without the platform tribalism.', Icon: Megaphone },
+  { slug: 'paid-acquisition', title: 'Paid Acquisition', desc: 'Expert-led media buying across Meta, Google, YouTube and emerging surfaces, without the platform tribalism.', Icon: Megaphone },
   { slug: 'cro', title: 'Conversion Optimisation', desc: 'Landing experiences, funnels and lifecycle moments engineered to convert the traffic you already pay for.', Icon: Activity },
   { slug: 'analytics-attribution', title: 'Analytics & Attribution', desc: 'A measurement model your CFO trusts and your media buyer can act on, not vanity dashboards.', Icon: LineChart },
   { slug: 'scaling-frameworks', title: 'Scaling Frameworks', desc: 'Structured testing, budget allocation and incrementality protocols that turn signal into spend.', Icon: Layers },
@@ -244,7 +244,7 @@ function Philosophy() {
           </div>
           <p className="max-w-md text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed">
             Strategy, creative, media buying and optimisation don't sit in
-            separate rooms here. They operate as one system, owned by senior
+            separate rooms here. They operate as one system, owned by expert
             operators, accountable to revenue.
           </p>
         </div>
@@ -612,7 +612,7 @@ function Closing() {
         <div className="mt-12 grid lg:grid-cols-12 gap-10 items-end">
           <p className="lg:col-span-7 text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed max-w-2xl">
             For brands ready to scale with clarity, creativity and performance,
-            we open a small number of senior engagements each quarter.
+            we open a small number of select engagements each quarter.
           </p>
           <div className="lg:col-span-5 lg:text-right">
             <MagneticButton

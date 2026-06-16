@@ -34,7 +34,7 @@ const phases = [
     tag: 'Ongoing',
     title: 'Growth',
     desc: 'Live campaigns, weekly experimentation, lifecycle automations and monthly business reviews tied to revenue, not impressions.',
-    deliverables: ['Weekly experiments', 'Monthly business review', 'Quarterly model refresh', 'Senior strategist on call'],
+    deliverables: ['Weekly experiments', 'Monthly business review', 'Quarterly model refresh', 'Lead strategist on call'],
   },
 ];
 

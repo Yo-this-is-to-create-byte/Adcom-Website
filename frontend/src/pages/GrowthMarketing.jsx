@@ -27,11 +27,11 @@ const data = {
     kicker: 'How we operate',
     title: 'Six disciplines.<br /><span class="text-white/40">One growth engine.</span>',
     subtitle:
-      'No silos, no platform tribalism. Senior operators run strategy, creative, media and lifecycle as one team, and one P&L.',
+      'No silos, no platform tribalism. Expert operators run strategy, creative, media and lifecycle as one team, and one P&L.',
     pillars: [
       { title: 'Growth Strategy', desc: 'The thesis behind every rupee, channels, segments, unit economics and the model that ties them together.', Icon: Map },
       { title: 'Creative Engine', desc: 'Concept-led, modular creative built to compound, not creative that burns out in a week.', Icon: Layers },
-      { title: 'Paid Acquisition', desc: 'Senior media buying across Meta, Google, YouTube and emerging surfaces, run for incrementality.', Icon: Rocket },
+      { title: 'Paid Acquisition', desc: 'Expert-led media buying across Meta, Google, YouTube and emerging surfaces, run for incrementality.', Icon: Rocket },
       { title: 'Lifecycle & Retention', desc: 'Email, SMS, CRM and onboarding flows that turn first purchases into a compounding LTV curve.', Icon: Repeat },
       { title: 'Analytics & Measurement', desc: 'An attribution model your CFO trusts and your media buyer can act on. No dashboard theatre.', Icon: BarChart3 },
       { title: 'Experimentation OS', desc: 'A weekly testing cadence across creative, audience, funnel and offer, with disciplined readouts.', Icon: TrendingUp },
@@ -97,7 +97,7 @@ const data = {
   },
   closing: {
     headlineHtml: 'Growth isn\'t a campaign.<br /><span class="text-[#F43F5E]">It\'s a commitment.</span>',
-    body: 'We open a small number of senior growth engagements each quarter. If you are building something serious, let\'s talk.',
+    body: 'We open a small number of high-impact growth engagements each quarter. If you are building something serious, let\'s talk.',
   },
 };
 

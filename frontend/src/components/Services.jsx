@@ -30,7 +30,7 @@ export default function Services() {
             </h2>
           </div>
           <p className="max-w-md text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed">
-            Every service is delivered by senior specialists, not pods, not juniors, not outsourced.
+            Every service is delivered by highly qualified professionals, not pods, not outsourced.
           </p>
         </div>
 

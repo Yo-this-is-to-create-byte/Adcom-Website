@@ -288,7 +288,7 @@ function MenuOverlay({ open, onClose, go, goRoute }) {
                 className="mt-16 pt-8 border-t border-[rgba(255,255,255,0.08)] flex items-center justify-between text-xs uppercase tracking-[0.25em] text-[#A0A0A0]"
               >
                 <span>© {new Date().getFullYear()} Adcom Media</span>
-                <span>Independent · Senior-only · Bengaluru</span>
+                <span>Independent · Performance-Led · Bengaluru</span>
               </motion.div>
             </div>
           </div>

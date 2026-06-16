@@ -85,7 +85,7 @@ export default function Footer() {
         <div className="flex items-center justify-between flex-wrap gap-4 pb-16 border-b border-[rgba(255,255,255,0.08)]">
           <div className="text-[11px] font-mono uppercase tracking-[0.3em] text-[#A0A0A0] flex items-center gap-3">
             <span className="w-1.5 h-1.5 rounded-full bg-[#F43F5E] animate-pulse" />
-            Independent · Senior-only · Built in India
+            Independent · Performance-Led · Built in India
           </div>
           <div className="text-[11px] font-mono uppercase tracking-[0.3em] text-[#A0A0A0]">
             EST · 2025, Bengaluru / Dubai

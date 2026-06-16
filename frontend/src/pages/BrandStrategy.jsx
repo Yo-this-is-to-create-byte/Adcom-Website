@@ -16,13 +16,13 @@ const data = {
     headline:
       'Most brands aren\'t <span class="text-white/40">misunderstood.</span><br />They\'re <span class="text-[#F43F5E]">unfocused.</span>',
     body:
-      'A wordless brand world only happens when strategy, narrative and design are made by the same hands. We work small, senior and obsessively, and the work shows.',
+      'A wordless brand world only happens when strategy, narrative and design are made by the same hands. We work small, expertly and obsessively, and the work shows.',
   },
   pillars: {
     kicker: 'How we work',
     title: 'Six disciplines.<br /><span class="text-white/40">One brand world.</span>',
     subtitle:
-      'Strategy doesn\'t hand off to design here. The same senior team owns the entire arc from research to launch.',
+      'Strategy doesn\'t hand off to design here. The same expert team owns the entire arc from research to launch.',
     pillars: [
       { title: 'Brand Strategy', desc: 'Category framing, positioning and competitive geometry, the thesis everything else hangs from.', Icon: Compass },
       { title: 'Narrative & Voice', desc: 'Tone, messaging architecture and verbal identity that compounds across every touchpoint.', Icon: Type },
@@ -78,7 +78,7 @@ const data = {
     subtitle: 'Three principles run through every brand engagement. They are why our work survives ten launches, not one.',
     items: [
       { t: 'Strategy before aesthetic', d: 'A look without a thesis is decoration. We refuse to start in colour palettes.' },
-      { t: 'Senior hands only', d: 'No juniors near your brand. Strategy and design are made by the same operators.' },
+      { t: 'Highly qualified hands only', d: 'No trainees near your brand. Strategy and design are made by the same operators.' },
       { t: 'Systems over assets', d: "We hand over a brand system, not a folder of logos." },
     ],
   },

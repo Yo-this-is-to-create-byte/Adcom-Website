@@ -87,7 +87,7 @@ export default function Contact({
               {headline}
             </h2>
             <p className="mt-8 text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed max-w-md">
-              We operate with a small number of senior engagements at a time.
+              We operate with a small number of select engagements at a time.
               Share the basics, our growth lead will respond within one business
               day with a tailored proposal.
             </p>
@@ -150,7 +150,7 @@ export default function Contact({
                       Brief received.
                     </h3>
                     <p className="text-[#A0A0A0] max-w-sm mx-auto">
-                      A senior strategist will be in touch within one business day.
+                      A lead strategist will be in touch within one business day.
                       In the meantime, we&apos;re already reading.
                     </p>
                   </motion.div>
@@ -297,7 +297,7 @@ export default function Contact({
                       </button>
 
                       <p className="mt-4 text-[11px] font-mono uppercase tracking-[0.25em] text-[#A0A0A0] text-center">
-                        Reviewed by a senior strategist · Response in 24h
+                        Reviewed by a lead strategist · Response in 24h
                       </p>
                     </FormSection>
                   </motion.form>
