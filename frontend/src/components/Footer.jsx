@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Twitter, Linkedin, Instagram, ArrowUpRight } from 'lucide-react';
 import { FOOTER } from '@/constants/testIds';
 
@@ -29,7 +30,7 @@ export default function Footer() {
               title="Services"
               links={[
                 { label: 'Growth Marketing', href: '#services' },
-                { label: 'Performance', href: '#services' },
+                { label: 'Performance Marketing', href: '/services/performance-marketing' },
                 { label: 'Brand Strategy', href: '#services' },
                 { label: 'AI SEO', href: '#services' },
               ]}
@@ -77,6 +78,38 @@ export default function Footer() {
 }
 
 function FooterCol({ title, links }) {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleClick = (e, href) => {
+    // Internal route → use react-router
+    if (href.startsWith('/')) {
+      e.preventDefault();
+      if (location.pathname === href) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        navigate(href);
+      }
+      return;
+    }
+    // Anchor (#...) — if not on home, navigate home first then scroll
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const id = href.slice(1);
+      if (location.pathname !== '/') {
+        navigate(`/#${id}`);
+        setTimeout(() => {
+          const el = document.getElementById(id);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 80);
+      } else {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+    // mailto: / external → let default happen
+  };
+
   return (
     <div>
       <div className="text-xs uppercase tracking-[0.25em] text-[#A0A0A0] mb-5">{title}</div>
@@ -85,6 +118,7 @@ function FooterCol({ title, links }) {
           <li key={l.label}>
             <a
               href={l.href}
+              onClick={(e) => handleClick(e, l.href)}
               className="group inline-flex items-center gap-1.5 text-[15px] text-white/85 hover:text-white transition-colors"
             >
               {l.label}
