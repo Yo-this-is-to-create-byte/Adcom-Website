@@ -14,6 +14,7 @@ import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import CustomCursor from '@/components/CustomCursor';
+import PerformanceMarketing from '@/pages/PerformanceMarketing';
 
 function Landing() {
   return (
@@ -46,6 +47,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/services/performance-marketing" element={<PerformanceMarketing />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { NAV } from '@/constants/testIds';
 import MagneticButton from './MagneticButton';
@@ -15,6 +16,8 @@ const links = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 32);
@@ -25,6 +28,15 @@ export default function Header() {
 
   const go = (id) => {
     setOpen(false);
+    if (location.pathname !== '/') {
+      navigate(`/#${id}`);
+      // After navigation, scroll on next tick
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 80);
+      return;
+    }
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
@@ -42,9 +54,16 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         <a
-          href="#top"
+          href="/"
           data-testid={NAV.logoLink}
-          onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+          onClick={(e) => {
+            e.preventDefault();
+            if (location.pathname !== '/') {
+              navigate('/');
+            } else {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          }}
           className="flex items-center group"
           aria-label="Adcom Media — home"
         >
