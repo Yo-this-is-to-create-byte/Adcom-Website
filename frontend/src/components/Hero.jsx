@@ -86,7 +86,7 @@ export default function Hero() {
         >
           <span className="w-2 h-2 rounded-full bg-[#E11D2E] animate-pulse" />
           <span className="text-xs md:text-sm uppercase tracking-[0.25em] text-[#A0A0A0] font-medium">
-            Independent Growth Studio · Est. 2021
+            Independent Growth Studio · Est. 2025
           </span>
         </motion.div>
 
@@ -114,7 +114,7 @@ export default function Hero() {
           className="mt-10 max-w-2xl text-[18px] md:text-[20px] leading-relaxed text-[#A0A0A0]"
         >
           Growth marketing, branding, content and performance campaigns engineered
-          to scale ambitious businesses — quietly, relentlessly, profitably.
+          to scale ambitious businesses, quietly, relentlessly, profitably.
         </motion.p>
 
         <motion.div

@@ -19,7 +19,7 @@ const team = [
 
 const values = [
   { t: 'Senior, by design.', d: 'No pods. No juniors on your account. The hands that sold the work do the work.' },
-  { t: 'Owned, not outsourced.', d: 'Strategy, creative, media, lifecycle — built under one roof, accountable to one P&L.' },
+  { t: 'Owned, not outsourced.', d: 'Strategy, creative, media, lifecycle, built under one roof, accountable to one P&L.' },
   { t: 'Taste over volume.', d: 'We ship less, and we ship better. We would rather miss a brief than break a brand.' },
   { t: 'Numbers, ruthlessly.', d: 'We measure ourselves by your revenue, not by impressions, awards or invoice hours.' },
 ];
@@ -60,7 +60,7 @@ export default function AboutPage() {
             <p className="mt-10 max-w-2xl text-[18px] md:text-[20px] leading-relaxed text-[#A0A0A0]">
               Adcom Media is an independent, senior-only growth studio of strategists,
               marketers, designers and engineers. We partner with category-defining
-              founders across India, the Middle East and the US — and we measure
+              founders across India, the Middle East and the US, and we measure
               ourselves by the revenue we move.
             </p>
           </motion.div>
@@ -85,7 +85,7 @@ export default function AboutPage() {
                 <p className="mt-12 max-w-2xl text-[18px] md:text-[20px] leading-relaxed text-[#A0A0A0]">
                   Most modern agencies are organised to scale headcount. We are organised
                   to scale outcomes. That means fewer clients, fewer meetings, fewer
-                  decks, fewer middlemen — and far more time inside the actual craft.
+                  decks, fewer middlemen, and far more time inside the actual craft.
                 </p>
               </div>
             </div>
@@ -155,7 +155,7 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="border-y border-[rgba(255,255,255,0.08)] py-12 md:py-16 grid lg:grid-cols-12 gap-8 items-end">
               <p className="lg:col-span-9 font-display text-[28px] md:text-[36px] lg:text-[44px] leading-[1.1] tracking-tight">
-                Quietly building the most ambitious brands online —{' '}
+                Quietly building the most ambitious brands online,{' '}
                 <span className="text-[#F43F5E]">one engagement at a time.</span>
               </p>
               <div className="lg:col-span-3 lg:text-right">

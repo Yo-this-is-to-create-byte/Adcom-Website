@@ -18,7 +18,7 @@ const roles = [
 
 const principles = [
   { t: 'Senior by default.', d: 'Every role is a senior role. We do not hire juniors to staff client accounts.' },
-  { t: 'Ownership, not headcount.', d: 'You will own outcomes end-to-end — not a sliver of someone else\'s scope.' },
+  { t: 'Ownership, not headcount.', d: 'You will own outcomes end-to-end, not a sliver of someone else\'s scope.' },
   { t: 'Craft over churn.', d: 'We ship less, and we ship better. Long arcs, real depth, no agency-life burnout theatre.' },
 ];
 
@@ -49,8 +49,8 @@ export default function Careers() {
             </h1>
             <p className="mt-10 max-w-2xl text-[18px] md:text-[20px] leading-relaxed text-[#A0A0A0]">
               We hire infrequently and we hire well. If you are tired of pods, decks,
-              and meetings about meetings — and you want to do the best work of your
-              career on category-defining brands — read on.
+              and meetings about meetings, and you want to do the best work of your
+              career on category-defining brands, read on.
             </p>
           </div>
         </section>
@@ -125,7 +125,7 @@ export default function Careers() {
               <a href="mailto:hello.adcommedia@gmail.com" className="text-white underline hover:text-[#F43F5E] transition-colors">
                 Send us a note
               </a>{' '}
-              — we hire opportunistically when we meet the right operator.
+             , we hire opportunistically when we meet the right operator.
             </p>
           </div>
         </section>

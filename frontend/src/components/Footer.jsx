@@ -88,7 +88,7 @@ export default function Footer() {
             Independent · Senior-only · Built in India
           </div>
           <div className="text-[11px] font-mono uppercase tracking-[0.3em] text-[#A0A0A0]">
-            EST · 2021 — Bengaluru / Dubai
+            EST · 2025, Bengaluru / Dubai
           </div>
         </div>
 
@@ -120,15 +120,15 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Giant outlined ADCOM MEDIA — full viewport width, fits on one line */}
+      {/* Giant outlined ADCOM MEDIA, full viewport width, fits on one line */}
       <div className="relative pt-16 pb-8 overflow-hidden w-full">
         <div
           data-testid={FOOTER.logo}
           aria-label="Adcom Media"
-          className="font-display tracking-tighter leading-[0.85] select-none text-center whitespace-nowrap px-4"
+          className="font-display tracking-tighter leading-[0.85] select-none text-center whitespace-nowrap px-2"
           style={{
-            fontSize: 'clamp(56px, 13vw, 240px)',
-            letterSpacing: '-0.05em',
+            fontSize: 'clamp(28px, 11vw, 220px)',
+            letterSpacing: '-0.04em',
             WebkitTextStroke: '1px rgba(255,255,255,0.85)',
             WebkitTextFillColor: 'transparent',
             color: 'transparent',

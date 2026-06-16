@@ -60,7 +60,7 @@ function CharReveal({ text, baseDelay = 0 }) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  01 — Hero                                                         */
+/*  01, Hero                                                         */
 /* ------------------------------------------------------------------ */
 
 function Hero() {
@@ -136,7 +136,7 @@ function Hero() {
           className="mt-10 max-w-2xl text-[18px] md:text-[20px] leading-relaxed text-[#A0A0A0]"
         >
           We build performance marketing systems that turn attention into customers
-          and campaigns into <span className="text-white">sustainable growth</span> —
+          and campaigns into <span className="text-white">sustainable growth</span>,
           not paid spikes that disappear when the budget does.
         </motion.p>
 
@@ -172,7 +172,7 @@ function Hero() {
 }
 
 /* ------------------------------------------------------------------ */
-/*  02 — The Reality                                                  */
+/*  02, The Reality                                                  */
 /* ------------------------------------------------------------------ */
 
 function Reality() {
@@ -206,7 +206,7 @@ function Reality() {
               className="mt-12 max-w-2xl text-[18px] md:text-[20px] leading-relaxed text-[#A0A0A0]"
             >
               Throwing budget at campaigns rarely creates sustainable growth.
-              The brands that compound are the ones with a system — clear positioning,
+              The brands that compound are the ones with a system, clear positioning,
               creative built for the funnel, attribution that tells the truth, and a
               feedback loop that gets sharper every week.
             </motion.p>
@@ -218,15 +218,15 @@ function Reality() {
 }
 
 /* ------------------------------------------------------------------ */
-/*  03 — Philosophy / Pillars                                         */
+/*  03, Philosophy / Pillars                                         */
 /* ------------------------------------------------------------------ */
 
 const pillars = [
-  { slug: 'growth-strategy', title: 'Growth Strategy', desc: 'The thesis behind every rupee spent — channels, segments and unit economics that scale.', Icon: Target },
+  { slug: 'growth-strategy', title: 'Growth Strategy', desc: 'The thesis behind every rupee spent, channels, segments and unit economics that scale.', Icon: Target },
   { slug: 'creative-systems', title: 'Creative Systems', desc: 'Concept-led, modular ad systems that compound learning rather than burn out in a week.', Icon: Sparkles },
-  { slug: 'paid-acquisition', title: 'Paid Acquisition', desc: 'Senior media buying across Meta, Google, YouTube and emerging surfaces — without the platform tribalism.', Icon: Megaphone },
+  { slug: 'paid-acquisition', title: 'Paid Acquisition', desc: 'Senior media buying across Meta, Google, YouTube and emerging surfaces, without the platform tribalism.', Icon: Megaphone },
   { slug: 'cro', title: 'Conversion Optimisation', desc: 'Landing experiences, funnels and lifecycle moments engineered to convert the traffic you already pay for.', Icon: Activity },
-  { slug: 'analytics-attribution', title: 'Analytics & Attribution', desc: 'A measurement model your CFO trusts and your media buyer can act on — not vanity dashboards.', Icon: LineChart },
+  { slug: 'analytics-attribution', title: 'Analytics & Attribution', desc: 'A measurement model your CFO trusts and your media buyer can act on, not vanity dashboards.', Icon: LineChart },
   { slug: 'scaling-frameworks', title: 'Scaling Frameworks', desc: 'Structured testing, budget allocation and incrementality protocols that turn signal into spend.', Icon: Layers },
 ];
 
@@ -244,7 +244,7 @@ function Philosophy() {
           </div>
           <p className="max-w-md text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed">
             Strategy, creative, media buying and optimisation don't sit in
-            separate rooms here. They operate as one system — owned by senior
+            separate rooms here. They operate as one system, owned by senior
             operators, accountable to revenue.
           </p>
         </div>
@@ -281,7 +281,7 @@ function Philosophy() {
 }
 
 /* ------------------------------------------------------------------ */
-/*  04 — Growth Stories                                               */
+/*  04, Growth Stories                                               */
 /* ------------------------------------------------------------------ */
 
 const stories = [
@@ -317,7 +317,7 @@ const stories = [
     industry: 'Enterprise SaaS',
     challenge: 'Pipeline was generous on the top, hollow at the bottom. Sales was closing meetings, not deals.',
     approach: 'Re-architected paid + outbound around ICP intent signals, rebuilt LP narratives by buyer stage and rewired attribution to revenue.',
-    outcome: 'Pipeline quality replaced pipeline quantity as the operating metric — and ACV climbed with it.',
+    outcome: 'Pipeline quality replaced pipeline quantity as the operating metric, and ACV climbed with it.',
     metrics: [
       { v: '+220%', l: 'SQL → Won' },
       { v: '2.6x', l: 'ACV growth' },
@@ -339,7 +339,7 @@ function GrowthStories() {
             </h2>
           </div>
           <p className="lg:col-span-6 lg:col-start-7 text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed">
-            A handful of recent engagements. Industries change, channels change —
+            A handful of recent engagements. Industries change, channels change,
             the operating model doesn't.
           </p>
         </div>
@@ -406,7 +406,7 @@ function StoryBlock({ label, body }) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  05 — Growth Framework                                             */
+/*  05, Growth Framework                                             */
 /* ------------------------------------------------------------------ */
 
 const phases = [
@@ -419,7 +419,7 @@ const phases = [
   {
     n: '02',
     title: 'Define',
-    desc: 'Build the acquisition strategy, targeting architecture, funnel structure and growth roadmap — defensible to your board.',
+    desc: 'Build the acquisition strategy, targeting architecture, funnel structure and growth roadmap, defensible to your board.',
     tag: 'Phase 02',
   },
   {
@@ -431,7 +431,7 @@ const phases = [
   {
     n: '04',
     title: 'Deploy & Compound',
-    desc: 'Launch, optimise and scale through continuous testing, iteration and performance refinement — week after week.',
+    desc: 'Launch, optimise and scale through continuous testing, iteration and performance refinement, week after week.',
     tag: 'Phase 04',
   },
 ];
@@ -477,7 +477,7 @@ function GrowthFramework() {
             </h2>
           </div>
           <p className="lg:col-span-6 lg:col-start-7 text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed">
-            Every performance engagement runs through the same proprietary system —
+            Every performance engagement runs through the same proprietary system,
             calibrated to your category, stage and ambition. It's how the work
             compounds long after the launch week.
           </p>
@@ -495,7 +495,7 @@ function GrowthFramework() {
 }
 
 /* ------------------------------------------------------------------ */
-/*  06 — Different                                                    */
+/*  06, Different                                                    */
 /* ------------------------------------------------------------------ */
 
 function Different() {
@@ -516,7 +516,7 @@ function Different() {
             </h2>
           </div>
           <p className="lg:col-span-6 lg:col-start-7 text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed">
-            Three principles run through every engagement. They are not slogans —
+            Three principles run through every engagement. They are not slogans,
             they are the reason our work outlasts the retainer.
           </p>
         </div>
@@ -545,7 +545,7 @@ function Different() {
 }
 
 /* ------------------------------------------------------------------ */
-/*  07 — Client Perspective                                           */
+/*  07, Client Perspective                                           */
 /* ------------------------------------------------------------------ */
 
 function ClientPerspective() {
@@ -564,7 +564,7 @@ function ClientPerspective() {
           <Quote className="text-[#E11D2E] mb-6" size={40} />
           <p className="font-display text-[28px] md:text-[44px] lg:text-[56px] leading-[1.15] tracking-tight max-w-5xl">
             "We came to Adcom looking for a media buyer. We left with an operating
-            system. Eighteen months later, performance still compounds — and the
+            system. Eighteen months later, performance still compounds, and the
             team has never been sharper."
           </p>
           <div className="mt-12 flex items-center gap-5">
@@ -585,7 +585,7 @@ function ClientPerspective() {
 }
 
 /* ------------------------------------------------------------------ */
-/*  08 — Closing                                                      */
+/*  08, Closing                                                      */
 /* ------------------------------------------------------------------ */
 
 function Closing() {
@@ -611,7 +611,7 @@ function Closing() {
 
         <div className="mt-12 grid lg:grid-cols-12 gap-10 items-end">
           <p className="lg:col-span-7 text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed max-w-2xl">
-            For brands ready to scale with clarity, creativity and performance —
+            For brands ready to scale with clarity, creativity and performance,
             we open a small number of senior engagements each quarter.
           </p>
           <div className="lg:col-span-5 lg:text-right">

@@ -26,7 +26,7 @@ const phases = [
     n: '03',
     tag: 'Week 05–08',
     title: 'Creation',
-    desc: 'Brand systems, content, campaigns, landing pages and creative built in-house — at the velocity modern growth demands.',
+    desc: 'Brand systems, content, campaigns, landing pages and creative built in-house, at the velocity modern growth demands.',
     deliverables: ['Creative system', 'Landing & lifecycle build', 'Tracking & attribution', 'Launch plan'],
   },
   {
@@ -90,7 +90,7 @@ export default function ProcessPage() {
             </h1>
             <p className="mt-10 max-w-2xl text-[18px] md:text-[20px] leading-relaxed text-[#A0A0A0]">
               Every engagement at Adcom runs through the same proprietary four-phase
-              operating system — calibrated to your stage, ambition and category.
+              operating system, calibrated to your stage, ambition and category.
               It is the reason our work compounds long after the retainer ends.
             </p>
           </div>

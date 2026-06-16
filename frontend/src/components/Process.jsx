@@ -17,7 +17,7 @@ const steps = [
   {
     n: '03',
     title: 'Creation',
-    desc: 'Brand systems, content, campaigns, landing pages and creative built in-house — at the velocity modern growth demands.',
+    desc: 'Brand systems, content, campaigns, landing pages and creative built in-house, at the velocity modern growth demands.',
     tag: 'Week 05–08',
   },
   {
@@ -74,7 +74,7 @@ export default function Process() {
             </h2>
           </div>
           <p className="lg:col-span-6 lg:col-start-7 text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed">
-            Every engagement runs through the same four-phase operating system —
+            Every engagement runs through the same four-phase operating system,
             calibrated to your stage, ambition and category dynamics.
           </p>
         </div>

@@ -19,7 +19,7 @@ const items = [
   },
   {
     quote:
-      "What you actually buy from Adcom is taste. The work looks expensive because it is — and because they refuse to ship anything that isn't.",
+      "What you actually buy from Adcom is taste. The work looks expensive because it is, and because they refuse to ship anything that isn't.",
     name: 'Priya Kapoor',
     role: 'CMO, Orbit',
     avatar: 'https://i.pravatar.cc/120?img=32',

@@ -78,7 +78,7 @@ export default function Contact({
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
-          {/* Left column — headline + meta */}
+          {/* Left column, headline + meta */}
           <div className="lg:col-span-5 flex flex-col">
             <div className="text-[11px] font-mono uppercase tracking-[0.3em] text-[#F43F5E] mb-6">
               {kicker}
@@ -88,7 +88,7 @@ export default function Contact({
             </h2>
             <p className="mt-8 text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed max-w-md">
               We operate with a small number of senior engagements at a time.
-              Share the basics — our growth lead will respond within one business
+              Share the basics, our growth lead will respond within one business
               day with a tailored proposal.
             </p>
 
@@ -123,13 +123,13 @@ export default function Contact({
                 </div>
                 <div>
                   <div className="text-[11px] font-mono uppercase tracking-[0.3em] text-[#A0A0A0] mb-2">Intake</div>
-                  <div className="text-[15px]">Open — Q1</div>
+                  <div className="text-[15px]">Open, Q1</div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right column — multi-section form card */}
+          {/* Right column, multi-section form card */}
           <div className="lg:col-span-7">
             <div className="rounded-3xl border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.02)] backdrop-blur-sm overflow-hidden">
               <AnimatePresence mode="wait">

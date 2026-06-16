@@ -36,7 +36,7 @@ const studies = [
     industry: 'B2B SaaS',
     tag: 'AI SEO + LinkedIn',
     story:
-      'Orbit was invisible in the AI answer layer. We rebuilt their content engine for LLM retrieval and founder-led LinkedIn — pipeline now compounds without paid spend.',
+      'Orbit was invisible in the AI answer layer. We rebuilt their content engine for LLM retrieval and founder-led LinkedIn, pipeline now compounds without paid spend.',
     metric: '8.1x',
     metricLabel: 'Inbound pipeline',
     metric2: '#1',
@@ -49,7 +49,7 @@ const studies = [
     industry: 'Wellness',
     tag: 'Performance + Lifecycle',
     story:
-      'A subscription wellness brand stuck on a leaky funnel. We rebuilt acquisition, onboarding and retention into a single revenue system — and it has compounded every quarter since.',
+      'A subscription wellness brand stuck on a leaky funnel. We rebuilt acquisition, onboarding and retention into a single revenue system, and it has compounded every quarter since.',
     metric: '4.7x',
     metricLabel: 'Customer LTV',
     metric2: '63%',
@@ -74,7 +74,7 @@ const studies = [
 export default function CaseStudies() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end end'] });
-  // total cards width — translate to show all
+  // total cards width, translate to show all
   const x = useTransform(scrollYProgress, [0, 1], ['0%', '-80%']);
 
   return (

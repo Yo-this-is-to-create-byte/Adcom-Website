@@ -10,13 +10,13 @@ import CustomCursor from '@/components/CustomCursor';
 const studies = [
   {
     client: 'Finova', industry: 'Fintech', tag: 'Strategy + Performance',
-    story: 'From stealth to category challenger in nine months — positioning, funnel and paid engine built as one system.',
+    story: 'From stealth to category challenger in nine months, positioning, funnel and paid engine built as one system.',
     metric: '12.4x', m1: 'Blended ROAS', metric2: '₹38Cr', m2: 'Revenue Y1',
     image: 'https://images.unsplash.com/photo-1640161704729-cbe966a08476?auto=format&fit=crop&w=1600&q=80',
   },
   {
     client: 'Maison Noir', industry: 'Luxury D2C', tag: 'Brand + Content',
-    story: 'A wordless luxury brand world the internet recognises in a single frame — and a drop strategy that sells out in hours.',
+    story: 'A wordless luxury brand world the internet recognises in a single frame, and a drop strategy that sells out in hours.',
     metric: '+340%', m1: 'AOV uplift', metric2: '92k', m2: 'Drop waitlist',
     image: 'https://images.unsplash.com/photo-1620207418302-439b387441b0?auto=format&fit=crop&w=1600&q=80',
   },
@@ -28,7 +28,7 @@ const studies = [
   },
   {
     client: 'Numa', industry: 'Wellness', tag: 'Performance + Lifecycle',
-    story: 'A leaky subscription funnel rebuilt into a single revenue system — compounding every quarter since.',
+    story: 'A leaky subscription funnel rebuilt into a single revenue system, compounding every quarter since.',
     metric: '4.7x', m1: 'Customer LTV', metric2: '63%', m2: '12-mo retention',
     image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1600&q=80',
   },
@@ -70,7 +70,7 @@ export default function CaseStudiesPage() {
               <span className="block text-[#F43F5E]">second.</span>
             </h1>
             <p className="mt-10 max-w-2xl text-[18px] md:text-[20px] leading-relaxed text-[#A0A0A0]">
-              A selection of recent engagements. Industries change, channels change —
+              A selection of recent engagements. Industries change, channels change,
               the operating model and the standard of work do not.
             </p>
           </div>

@@ -115,7 +115,7 @@ async def _send_lead_email(contact: 'Contact') -> None:
     """Send a formatted lead notification to LEADS_INBOX via Resend.
     Silently no-ops if RESEND_API_KEY is not set."""
     if not RESEND_API_KEY:
-        logger.info("RESEND_API_KEY not set — skipping email notification.")
+        logger.info("RESEND_API_KEY not set, skipping email notification.")
         return
     try:
         services_html = ''.join(
@@ -134,9 +134,9 @@ async def _send_lead_email(contact: 'Contact') -> None:
                 <table width="100%" cellpadding="0" cellspacing="0" style="font-size:14px;line-height:1.6;">
                   <tr><td width="140" style="color:#A0A0A0;padding:8px 0;vertical-align:top;">Name</td><td style="padding:8px 0;">{contact.name}</td></tr>
                   <tr><td style="color:#A0A0A0;padding:8px 0;vertical-align:top;">Email</td><td style="padding:8px 0;"><a href="mailto:{contact.email}" style="color:#F43F5E;text-decoration:none;">{contact.email}</a></td></tr>
-                  <tr><td style="color:#A0A0A0;padding:8px 0;vertical-align:top;">Company</td><td style="padding:8px 0;">{contact.company or '—'}</td></tr>
-                  <tr><td style="color:#A0A0A0;padding:8px 0;vertical-align:top;">Website</td><td style="padding:8px 0;">{contact.website or '—'}</td></tr>
-                  <tr><td style="color:#A0A0A0;padding:8px 0;vertical-align:top;">Budget</td><td style="padding:8px 0;">{contact.budget or '—'}</td></tr>
+                  <tr><td style="color:#A0A0A0;padding:8px 0;vertical-align:top;">Company</td><td style="padding:8px 0;">{contact.company or ''}</td></tr>
+                  <tr><td style="color:#A0A0A0;padding:8px 0;vertical-align:top;">Website</td><td style="padding:8px 0;">{contact.website or ''}</td></tr>
+                  <tr><td style="color:#A0A0A0;padding:8px 0;vertical-align:top;">Budget</td><td style="padding:8px 0;">{contact.budget or ''}</td></tr>
                   <tr><td style="color:#A0A0A0;padding:8px 0;vertical-align:top;">Capabilities</td><td style="padding:8px 0;"><ul style="margin:0;padding-left:18px;">{services_html}</ul></td></tr>
                 </table>
               </td></tr>

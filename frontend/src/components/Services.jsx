@@ -6,7 +6,7 @@ import { SERVICES } from '@/constants/testIds';
 
 const services = [
   { slug: 'growth-marketing', title: 'Growth Marketing', desc: 'Full-funnel growth systems that compound month over month.', Icon: TrendingUp, href: '/services/growth-marketing' },
-  { slug: 'performance-marketing', title: 'Performance Marketing', desc: 'Paid media engineered for ROAS — Meta, Google, programmatic.', Icon: Target, href: '/services/performance-marketing' },
+  { slug: 'performance-marketing', title: 'Performance Marketing', desc: 'Paid media engineered for ROAS, Meta, Google, programmatic.', Icon: Target, href: '/services/performance-marketing' },
   { slug: 'seo', title: 'SEO', desc: 'Editorial-grade SEO built for ranking durability and authority.', Icon: Search, href: null },
   { slug: 'ai-seo', title: 'AI SEO', desc: 'Optimised for LLM answers, ChatGPT, Perplexity and Gemini.', Icon: Bot, href: '/services/ai-seo' },
   { slug: 'linkedin-marketing', title: 'LinkedIn Marketing', desc: 'Founder-led storytelling that converts inbound into pipeline.', Icon: Linkedin, href: null },
@@ -30,7 +30,7 @@ export default function Services() {
             </h2>
           </div>
           <p className="max-w-md text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed">
-            Every service is delivered by senior specialists — not pods, not juniors, not outsourced.
+            Every service is delivered by senior specialists, not pods, not juniors, not outsourced.
           </p>
         </div>
 

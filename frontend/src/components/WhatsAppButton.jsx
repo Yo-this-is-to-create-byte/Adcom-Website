@@ -4,7 +4,7 @@ import { MessageCircle, X } from 'lucide-react';
 
 const WHATSAPP_NUMBER = '918308606641'; // +91 83086 06641
 const DEFAULT_MESSAGE = encodeURIComponent(
-  "Hi Adcom Media — I'd like to talk about a growth engagement."
+  "Hi Adcom Media, I'd like to talk about a growth engagement."
 );
 
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${DEFAULT_MESSAGE}`;
@@ -58,7 +58,7 @@ export default function WhatsAppButton() {
                 </button>
               </div>
               <p className="text-sm text-[#A0A0A0] leading-relaxed">
-                We&apos;ll reply within business hours — typically same day.
+                We&apos;ll reply within business hours, typically same day.
               </p>
               <a
                 data-testid="whatsapp-cta"

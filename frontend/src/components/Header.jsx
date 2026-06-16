@@ -90,12 +90,12 @@ export default function Header() {
               }
             }}
             className="flex items-center group"
-            aria-label="Adcom Media — home"
+            aria-label="Adcom Media, home"
           >
             <img
-              src="https://customer-assets.emergentagent.com/job_adcom-vault/artifacts/25jd59u4_WhatsApp%20Image%202026-06-09%20at%204.34.49%20PM.jpeg"
+              src="https://customer-assets.emergentagent.com/job_adcom-vault/artifacts/4bimeq2z_Adcom%20Logo-03.png"
               alt="Adcom Media"
-              className="h-12 md:h-14 w-auto object-contain"
+              className="h-10 md:h-12 w-auto object-contain"
             />
           </a>
 
@@ -219,7 +219,7 @@ function MenuOverlay({ open, onClose, go, goRoute }) {
                   </ul>
                 </nav>
 
-                {/* Right column — Services + contact */}
+                {/* Right column, Services + contact */}
                 <div className="lg:col-span-5 flex flex-col gap-12">
                   <motion.div
                     custom={navLinks.length}
