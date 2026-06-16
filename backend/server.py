@@ -44,7 +44,9 @@ class ContactCreate(BaseModel):
     name: str = Field(..., min_length=1, max_length=120)
     email: EmailStr
     company: Optional[str] = Field(default=None, max_length=160)
+    website: Optional[str] = Field(default=None, max_length=200)
     budget: Optional[str] = Field(default=None, max_length=60)
+    services: Optional[List[str]] = Field(default_factory=list)
     message: str = Field(..., min_length=1, max_length=4000)
 
 
@@ -54,7 +56,9 @@ class Contact(BaseModel):
     name: str
     email: EmailStr
     company: Optional[str] = None
+    website: Optional[str] = None
     budget: Optional[str] = None
+    services: List[str] = Field(default_factory=list)
     message: str
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 

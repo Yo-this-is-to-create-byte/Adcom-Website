@@ -5,15 +5,20 @@ import { ArrowUpRight } from 'lucide-react';
 import { NAV } from '@/constants/testIds';
 
 const navLinks = [
-  { label: 'Work', id: 'work', testid: NAV.workLink },
-  { label: 'Services', id: 'services', testid: NAV.servicesLink },
-  { label: 'Case Studies', id: 'case-studies', testid: NAV.caseStudiesLink },
-  { label: 'About', id: 'about', testid: NAV.aboutLink },
-  { label: 'Contact', id: 'contact', testid: NAV.contactLink },
+  { label: 'Work', id: 'work', testid: NAV.workLink, type: 'anchor' },
+  { label: 'Services', id: 'services', testid: NAV.servicesLink, type: 'anchor' },
+  { label: 'Case Studies', href: '/case-studies', testid: NAV.caseStudiesLink, type: 'route' },
+  { label: 'About', href: '/about', testid: NAV.aboutLink, type: 'route' },
+  { label: 'Process', href: '/process', testid: 'nav-process-link', type: 'route' },
+  { label: 'Careers', href: '/careers', testid: 'nav-careers-link', type: 'route' },
+  { label: 'Contact', href: '/contact', testid: NAV.contactLink, type: 'route' },
 ];
 
 const servicePages = [
+  { label: 'Growth Marketing', href: '/services/growth-marketing' },
   { label: 'Performance Marketing', href: '/services/performance-marketing' },
+  { label: 'Brand Strategy', href: '/services/brand-strategy' },
+  { label: 'AI SEO', href: '/services/ai-seo' },
 ];
 
 export default function Header() {
@@ -97,7 +102,7 @@ export default function Header() {
           <div className="flex items-center gap-4 md:gap-6">
             <button
               data-testid={NAV.ctaButton}
-              onClick={() => go('contact')}
+              onClick={() => goRoute('/contact')}
               className="text-sm md:text-[15px] font-medium text-white/85 hover:text-white transition-colors"
             >
               Contact Us
@@ -186,7 +191,7 @@ function MenuOverlay({ open, onClose, go, goRoute }) {
                   <ul className="space-y-1">
                     {navLinks.map((l, i) => (
                       <motion.li
-                        key={l.id}
+                        key={l.label}
                         custom={i}
                         initial="hidden"
                         animate="visible"
@@ -195,13 +200,13 @@ function MenuOverlay({ open, onClose, go, goRoute }) {
                       >
                         <button
                           data-testid={`overlay-${l.testid}`}
-                          onClick={() => go(l.id)}
+                          onClick={() => (l.type === 'route' ? goRoute(l.href) : go(l.id))}
                           className="group flex items-baseline gap-4 py-3 text-left w-full"
                         >
                           <span className="text-xs font-mono text-[#A0A0A0] w-8 group-hover:text-[#F43F5E] transition-colors">
                             {String(i + 1).padStart(2, '0')}
                           </span>
-                          <span className="font-display text-[40px] sm:text-[56px] md:text-[72px] lg:text-[88px] leading-[1.02] tracking-tighter text-white/85 group-hover:text-white transition-colors">
+                          <span className="font-display text-[40px] sm:text-[56px] md:text-[68px] lg:text-[80px] leading-[1.02] tracking-tighter text-white/85 group-hover:text-white transition-colors">
                             {l.label}
                           </span>
                           <ArrowUpRight
@@ -242,7 +247,7 @@ function MenuOverlay({ open, onClose, go, goRoute }) {
                         </li>
                       ))}
                       <li className="text-sm text-[#A0A0A0] italic pt-1">
-                        More service pages coming soon.
+                        Six other capabilities by request.
                       </li>
                     </ul>
                   </motion.div>
@@ -264,7 +269,7 @@ function MenuOverlay({ open, onClose, go, goRoute }) {
                       <div className="text-[#A0A0A0]">Bengaluru · Dubai · Remote</div>
                     </div>
                     <button
-                      onClick={() => go('contact')}
+                      onClick={() => goRoute('/contact')}
                       className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#E11D2E] hover:bg-[#F43F5E] text-white text-sm font-semibold transition-colors"
                     >
                       Book a strategy call

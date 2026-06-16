@@ -15,6 +15,14 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import CustomCursor from '@/components/CustomCursor';
 import PerformanceMarketing from '@/pages/PerformanceMarketing';
+import GrowthMarketing from '@/pages/GrowthMarketing';
+import BrandStrategy from '@/pages/BrandStrategy';
+import AISEO from '@/pages/AISEO';
+import About from '@/pages/About';
+import ProcessPage from '@/pages/Process';
+import CaseStudiesPage from '@/pages/CaseStudiesPage';
+import Careers from '@/pages/Careers';
+import ContactPage from '@/pages/ContactPage';
 
 function Landing() {
   return (
@@ -48,6 +56,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/services/performance-marketing" element={<PerformanceMarketing />} />
+        <Route path="/services/growth-marketing" element={<GrowthMarketing />} />
+        <Route path="/services/brand-strategy" element={<BrandStrategy />} />
+        <Route path="/services/ai-seo" element={<AISEO />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/process" element={<ProcessPage />} />
+        <Route path="/case-studies" element={<CaseStudiesPage />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
   );
