@@ -95,20 +95,25 @@ export default function Contact({
             <div className="mt-16 grid grid-cols-1 gap-8 max-w-md">
               <div>
                 <div className="text-[11px] font-mono uppercase tracking-[0.3em] text-[#A0A0A0] mb-2">
-                  Direct line
+                  Direct line / WhatsApp
                 </div>
-                <a href="tel:+919876543210" className="flex items-center gap-3 text-white hover:text-[#F43F5E] transition-colors">
+                <a
+                  href="https://wa.me/918308606641?text=Hi%20Adcom%20Media%20%E2%80%94%20I%27d%20like%20to%20talk%20about%20a%20growth%20engagement."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-white hover:text-[#25D366] transition-colors"
+                >
                   <Phone size={16} />
-                  <span className="text-[18px]">+91 (987) 654-3210</span>
+                  <span className="text-[18px]">+91 83086 06641</span>
                 </a>
               </div>
               <div>
                 <div className="text-[11px] font-mono uppercase tracking-[0.3em] text-[#A0A0A0] mb-2">
                   Engagement inbox
                 </div>
-                <a href="mailto:hello@adcommedia.co" className="flex items-center gap-3 text-white hover:text-[#F43F5E] transition-colors">
+                <a href="mailto:hello.adcommedia@gmail.com" className="flex items-center gap-3 text-white hover:text-[#F43F5E] transition-colors">
                   <Mail size={16} />
-                  <span className="text-[18px]">hello@adcommedia.co</span>
+                  <span className="text-[18px]">hello.adcommedia@gmail.com</span>
                 </a>
               </div>
               <div className="grid grid-cols-2 gap-6 pt-6 border-t border-[rgba(255,255,255,0.08)]">

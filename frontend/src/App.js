@@ -13,6 +13,7 @@ import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import CustomCursor from '@/components/CustomCursor';
+import WhatsAppButton from '@/components/WhatsAppButton';
 import PerformanceMarketing from '@/pages/PerformanceMarketing';
 import GrowthMarketing from '@/pages/GrowthMarketing';
 import BrandStrategy from '@/pages/BrandStrategy';
@@ -47,6 +48,7 @@ function Landing() {
 function App() {
   return (
     <BrowserRouter>
+      <WhatsAppButton />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/services/performance-marketing" element={<PerformanceMarketing />} />

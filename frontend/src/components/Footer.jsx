@@ -25,7 +25,7 @@ const cols = [
   {
     title: 'Connect',
     links: [
-      { label: 'hello@adcommedia.co', href: 'mailto:hello@adcommedia.co' },
+      { label: 'hello.adcommedia@gmail.com', href: 'mailto:hello.adcommedia@gmail.com' },
       { label: 'Book a call', href: '/contact' },
       { label: 'Careers', href: '/careers' },
       { label: 'Press', href: '#press' },

@@ -263,8 +263,8 @@ function MenuOverlay({ open, onClose, go, goRoute }) {
                       Get in touch
                     </div>
                     <div className="space-y-3 text-[15px]">
-                      <a href="mailto:hello@adcommedia.co" className="block text-white hover:text-[#F43F5E] transition-colors">
-                        hello@adcommedia.co
+                      <a href="mailto:hello.adcommedia@gmail.com" className="block text-white hover:text-[#F43F5E] transition-colors">
+                        hello.adcommedia@gmail.com
                       </a>
                       <div className="text-[#A0A0A0]">Bengaluru · Dubai · Remote</div>
                     </div>

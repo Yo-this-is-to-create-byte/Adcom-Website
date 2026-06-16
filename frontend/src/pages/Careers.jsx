@@ -96,7 +96,7 @@ export default function Careers() {
               {roles.map((r, i) => (
                 <motion.a
                   key={r.title}
-                  href="mailto:careers@adcommedia.co?subject=Application"
+                  href="mailto:hello.adcommedia@gmail.com?subject=Application"
                   initial={{ opacity: 0, y: 16 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -122,7 +122,7 @@ export default function Careers() {
 
             <p className="mt-10 text-[15px] text-[#A0A0A0] max-w-2xl">
               Don&apos;t see your role?{' '}
-              <a href="mailto:careers@adcommedia.co" className="text-white underline hover:text-[#F43F5E] transition-colors">
+              <a href="mailto:hello.adcommedia@gmail.com" className="text-white underline hover:text-[#F43F5E] transition-colors">
                 Send us a note
               </a>{' '}
               — we hire opportunistically when we meet the right operator.
