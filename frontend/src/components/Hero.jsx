@@ -86,7 +86,7 @@ export default function Hero() {
         >
           <span className="w-2 h-2 rounded-full bg-[#E11D2E] animate-pulse" />
           <span className="text-xs md:text-sm uppercase tracking-[0.25em] text-[#A0A0A0] font-medium">
-            A growth studio for ambitious brands
+            Independent Growth Studio · Est. 2021
           </span>
         </motion.div>
 
@@ -113,38 +113,33 @@ export default function Hero() {
           transition={{ delay: 1.4, duration: 0.8 }}
           className="mt-10 max-w-2xl text-[18px] md:text-[20px] leading-relaxed text-[#A0A0A0]"
         >
-          Adcom Media partners with category-defining founders to grow brands
-          through <span className="text-white">strategy</span>,{' '}
-          <span className="text-white">creative</span> and{' '}
-          <span className="text-white">performance</span> — engineered together,
-          measured in revenue.
+          Growth marketing, branding, content and performance campaigns engineered
+          to scale ambitious businesses — quietly, relentlessly, profitably.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.6, duration: 0.8 }}
-          className="mt-12 flex flex-col sm:flex-row gap-6 sm:items-center"
+          className="mt-12 flex flex-col sm:flex-row gap-4 sm:items-center"
         >
           <MagneticButton
             data-testid={HERO.primaryCta}
             onClick={() => go('contact')}
             className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#E11D2E] hover:bg-[#F43F5E] text-white text-sm font-semibold transition-colors duration-300"
           >
-            Book a Strategy Call
+            Start Your Project
             <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </MagneticButton>
 
-          <button
+          <MagneticButton
             data-testid={HERO.secondaryCta}
             onClick={() => go('case-studies')}
-            className="group inline-flex items-center gap-2 text-sm font-medium text-[#A0A0A0] hover:text-white transition-colors"
+            className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-[rgba(255,255,255,0.15)] hover:border-white text-white text-sm font-semibold transition-colors duration-300"
           >
-            <span className="border-b border-[rgba(255,255,255,0.2)] group-hover:border-white pb-1 transition-colors">
-              See selected work
-            </span>
-            <ArrowUpRight size={14} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-          </button>
+            View Work
+            <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+          </MagneticButton>
         </motion.div>
       </motion.div>
 

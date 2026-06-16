@@ -7,7 +7,6 @@ import Hero from '@/components/Hero';
 import Marquee from '@/components/Marquee';
 import Services from '@/components/Services';
 import CaseStudies from '@/components/CaseStudies';
-import Interlude from '@/components/Interlude';
 import WhyAdcom from '@/components/WhyAdcom';
 import Process from '@/components/Process';
 import Testimonials from '@/components/Testimonials';
@@ -34,11 +33,6 @@ function Landing() {
         <Marquee />
         <Services />
         <CaseStudies />
-        <Interlude
-          kicker="Pause."
-          line="If your growth has plateaued — or hasn't started — the next move isn't another agency. It's a conversation."
-          cta="Book a strategy call"
-        />
         <WhyAdcom />
         <Process />
         <Testimonials />

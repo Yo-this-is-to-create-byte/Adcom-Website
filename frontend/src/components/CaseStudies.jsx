@@ -92,7 +92,7 @@ export default function CaseStudies() {
               <span className="w-8 h-px bg-[#A0A0A0]" /> Selected Work
             </div>
             <h2 className="font-display text-[40px] md:text-[56px] lg:text-[64px] leading-[1.05] tracking-tight">
-              Stories first.<br /><span className="text-white/40">Numbers second.</span>
+              Case studies that read like<br /><span className="text-white/40">growth thrillers.</span>
             </h2>
           </div>
           <span className="text-xs uppercase tracking-[0.25em] text-[#A0A0A0] hidden md:block">

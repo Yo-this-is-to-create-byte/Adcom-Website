@@ -79,8 +79,9 @@ export default function Footer() {
         }}
       />
 
+      {/* Three columns */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        {/* Top — kicker */}
+        {/* Top kicker bar */}
         <div className="flex items-center justify-between flex-wrap gap-4 pb-16 border-b border-[rgba(255,255,255,0.08)]">
           <div className="text-[11px] font-mono uppercase tracking-[0.3em] text-[#A0A0A0] flex items-center gap-3">
             <span className="w-1.5 h-1.5 rounded-full bg-[#F43F5E] animate-pulse" />
@@ -91,7 +92,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Three columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 py-20">
           {cols.map((col) => (
             <div key={col.title}>
@@ -118,28 +118,30 @@ export default function Footer() {
             </div>
           ))}
         </div>
+      </div>
 
-        {/* Giant outlined ADCOM MEDIA */}
-        <div className="relative pt-16 pb-8">
-          <div
-            data-testid={FOOTER.logo}
-            aria-label="Adcom Media"
-            className="font-display tracking-tighter leading-[0.85] select-none text-center"
-            style={{
-              fontSize: 'clamp(56px, 18vw, 320px)',
-              letterSpacing: '-0.06em',
-              WebkitTextStroke: '1px rgba(255,255,255,0.85)',
-              WebkitTextFillColor: 'transparent',
-              color: 'transparent',
-              textShadow: '0 0 80px rgba(225,29,46,0.2)',
-            }}
-          >
-            ADCOM&nbsp;MEDIA
-          </div>
-          {/* Soft red underline glow */}
-          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[60%] h-px bg-gradient-to-r from-transparent via-[#E11D2E]/70 to-transparent" />
+      {/* Giant outlined ADCOM MEDIA — full viewport width, fits on one line */}
+      <div className="relative pt-16 pb-8 overflow-hidden w-full">
+        <div
+          data-testid={FOOTER.logo}
+          aria-label="Adcom Media"
+          className="font-display tracking-tighter leading-[0.85] select-none text-center whitespace-nowrap px-4"
+          style={{
+            fontSize: 'clamp(56px, 13vw, 240px)',
+            letterSpacing: '-0.05em',
+            WebkitTextStroke: '1px rgba(255,255,255,0.85)',
+            WebkitTextFillColor: 'transparent',
+            color: 'transparent',
+            textShadow: '0 0 80px rgba(225,29,46,0.2)',
+          }}
+        >
+          ADCOM&nbsp;MEDIA
         </div>
+        {/* Soft red underline glow */}
+        <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[60%] h-px bg-gradient-to-r from-transparent via-[#E11D2E]/70 to-transparent" />
+      </div>
 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mt-12 pt-8 border-t border-[rgba(255,255,255,0.08)]">
           <div className="text-[11px] font-mono uppercase tracking-[0.25em] text-[#A0A0A0]">

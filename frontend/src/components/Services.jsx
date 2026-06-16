@@ -22,17 +22,15 @@ export default function Services() {
         <div className="flex items-end justify-between flex-wrap gap-6 mb-16">
           <div>
             <div className="text-xs md:text-sm uppercase tracking-[0.25em] text-[#A0A0A0] mb-6 flex items-center gap-3">
-              <span className="w-8 h-px bg-[#A0A0A0]" /> Capabilities
+              <span className="w-8 h-px bg-[#A0A0A0]" /> Services
             </div>
             <h2 className="font-display text-[48px] md:text-[56px] lg:text-[64px] leading-[1.05] tracking-tight max-w-3xl">
-              Strategy, creative<br />
-              and performance —<br />
-              <span className="text-white/40">built as one engine.</span>
+              Eight disciplines.<br />
+              <span className="text-white/40">One revenue engine.</span>
             </h2>
           </div>
           <p className="max-w-md text-[18px] md:text-[20px] text-[#A0A0A0] leading-relaxed">
-            We don't sell services in silos. Every capability is wired into a
-            single growth system, owned by senior operators.
+            Every service is delivered by senior specialists — not pods, not juniors, not outsourced.
           </p>
         </div>
 
