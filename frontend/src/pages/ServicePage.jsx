@@ -5,6 +5,7 @@ import { ArrowUpRight, ArrowLeft, Quote } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Contact from '@/components/Contact';
+import FAQ from '@/components/FAQ';
 import CustomCursor from '@/components/CustomCursor';
 import MagneticButton from '@/components/MagneticButton';
 
@@ -428,6 +429,7 @@ export default function ServicePage({ data }) {
         <Principles {...data.principles} />
         <Testimonial {...data.testimonial} />
         <Closing {...data.closing} />
+        <FAQ />
         <Contact />
       </main>
       <Footer />

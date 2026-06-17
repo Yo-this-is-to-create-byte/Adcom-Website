@@ -13,6 +13,7 @@ import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import CustomCursor from '@/components/CustomCursor';
+import FAQ from '@/components/FAQ';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import PerformanceMarketing from '@/pages/PerformanceMarketing';
 import GrowthMarketing from '@/pages/GrowthMarketing';
@@ -23,6 +24,8 @@ import ProcessPage from '@/pages/Process';
 import CaseStudiesPage from '@/pages/CaseStudiesPage';
 import Careers from '@/pages/Careers';
 import ContactPage from '@/pages/ContactPage';
+import Blog from '@/pages/Blog';
+import BlogPost from '@/pages/BlogPost';
 
 function Landing() {
   return (
@@ -37,6 +40,7 @@ function Landing() {
         <WhyAdcom />
         <Process />
         <Testimonials />
+        <FAQ />
         <Contact />
       </main>
       <Footer />
@@ -60,6 +64,8 @@ function App() {
         <Route path="/case-studies" element={<CaseStudiesPage />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
       </Routes>
     </BrowserRouter>
   );

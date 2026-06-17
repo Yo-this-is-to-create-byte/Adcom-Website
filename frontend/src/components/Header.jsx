@@ -10,6 +10,7 @@ const navLinks = [
   { label: 'Case Studies', href: '/case-studies', testid: NAV.caseStudiesLink, type: 'route' },
   { label: 'About', href: '/about', testid: NAV.aboutLink, type: 'route' },
   { label: 'Process', href: '/process', testid: 'nav-process-link', type: 'route' },
+  { label: 'Blog', href: '/blog', testid: 'nav-blog-link', type: 'route' },
   { label: 'Careers', href: '/careers', testid: 'nav-careers-link', type: 'route' },
   { label: 'Contact', href: '/contact', testid: NAV.contactLink, type: 'route' },
 ];

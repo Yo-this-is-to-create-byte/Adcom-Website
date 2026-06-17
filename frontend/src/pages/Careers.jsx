@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowUpRight, MapPin } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Contact from '@/components/Contact';
+import FAQ from '@/components/FAQ';
 import CustomCursor from '@/components/CustomCursor';
 
 const roles = [
@@ -130,6 +131,7 @@ export default function Careers() {
           </div>
         </section>
 
+        <FAQ />
         <Contact />
       </main>
       <Footer />

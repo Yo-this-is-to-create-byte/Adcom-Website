@@ -15,6 +15,7 @@ import {
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Contact from '@/components/Contact';
+import FAQ from '@/components/FAQ';
 import CustomCursor from '@/components/CustomCursor';
 import MagneticButton from '@/components/MagneticButton';
 
@@ -652,6 +653,7 @@ export default function PerformanceMarketing() {
         <Different />
         <ClientPerspective />
         <Closing />
+        <FAQ />
         <Contact />
       </main>
       <Footer />
