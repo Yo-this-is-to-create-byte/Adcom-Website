@@ -26,6 +26,7 @@ import Careers from '@/pages/Careers';
 import ContactPage from '@/pages/ContactPage';
 import Blog from '@/pages/Blog';
 import BlogPost from '@/pages/BlogPost';
+import CaseStudySharmaFurniture from '@/pages/CaseStudySharmaFurniture';
 
 function Landing() {
   return (
@@ -66,6 +67,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/case-studies/sharma-furniture" element={<CaseStudySharmaFurniture />} />
       </Routes>
     </BrowserRouter>
   );

@@ -10,10 +10,11 @@ import CustomCursor from '@/components/CustomCursor';
 
 const studies = [
   {
-    client: 'Finova', industry: 'Fintech', tag: 'Strategy + Performance',
-    story: 'From stealth to category challenger in nine months, positioning, funnel and paid engine built as one system.',
-    metric: '12.4x', m1: 'Blended ROAS', metric2: '₹38Cr', m2: 'Revenue Y1',
-    image: 'https://images.unsplash.com/photo-1640161704729-cbe966a08476?auto=format&fit=crop&w=1600&q=80',
+    client: 'Sharma Furnituree', industry: 'Furniture Retail', tag: 'Local SEO + Growth',
+    href: '/case-studies/sharma-furniture',
+    story: 'A trusted Jamshedpur furniture house, taught to be discovered, trusted and chosen online weeks before a customer walks in.',
+    metric: '+26%', m1: 'Qualified enquiries', metric2: '18+', m2: 'First-page rankings',
+    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1600&q=80',
   },
   {
     client: 'Maison Noir', industry: 'Luxury D2C', tag: 'Brand + Content',
@@ -80,49 +81,55 @@ export default function CaseStudiesPage() {
         <section className="relative py-12 md:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
-              {studies.map((s, i) => (
-                <motion.article
-                  key={s.client}
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-80px' }}
-                  transition={{ duration: 0.8, delay: (i % 2) * 0.08 }}
-                  whileHover={{ y: -6 }}
-                  className="group relative aspect-[4/5] md:aspect-[5/6] rounded-3xl overflow-hidden border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.03)]"
-                >
-                  <div className="absolute inset-0 bg-cover bg-center group-hover:scale-[1.04] transition-transform duration-700" style={{ backgroundImage: `url(${s.image})` }} />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+              {studies.map((s, i) => {
+                const CardWrapper = s.href ? Link : 'div';
+                const wrapperProps = s.href ? { to: s.href } : {};
+                return (
+                  <motion.article
+                    key={s.client}
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: '-80px' }}
+                    transition={{ duration: 0.8, delay: (i % 2) * 0.08 }}
+                    whileHover={{ y: -6 }}
+                    className="group relative aspect-[4/5] md:aspect-[5/6] rounded-3xl overflow-hidden border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.03)]"
+                  >
+                    <CardWrapper {...wrapperProps} className="block absolute inset-0">
+                      <div className="absolute inset-0 bg-cover bg-center group-hover:scale-[1.04] transition-transform duration-700" style={{ backgroundImage: `url(${s.image})` }} />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
-                  <div className="absolute top-6 left-6 right-6 flex items-center justify-between">
-                    <span className="px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-[11px] uppercase tracking-[0.2em] border border-white/10">
-                      {String(i + 1).padStart(2, '0')} · {s.industry}
-                    </span>
-                    <span className="px-3 py-1.5 rounded-full bg-[#E11D2E]/90 text-[11px] uppercase tracking-[0.2em]">{s.tag}</span>
-                  </div>
+                      <div className="absolute top-6 left-6 right-6 flex items-center justify-between">
+                        <span className="px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-[11px] uppercase tracking-[0.2em] border border-white/10">
+                          {String(i + 1).padStart(2, '0')} · {s.industry}
+                        </span>
+                        <span className="px-3 py-1.5 rounded-full bg-[#E11D2E]/90 text-[11px] uppercase tracking-[0.2em]">{s.tag}</span>
+                      </div>
 
-                  <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 flex flex-col gap-6">
-                    <div>
-                      <div className="text-xs md:text-sm uppercase tracking-[0.25em] text-[#A0A0A0] mb-3">{s.client}</div>
-                      <p className="font-display text-lg md:text-xl lg:text-2xl leading-snug tracking-tight max-w-md">{s.story}</p>
-                    </div>
-                    <div className="flex items-end justify-between gap-4">
-                      <div className="flex gap-8">
+                      <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 flex flex-col gap-6">
                         <div>
-                          <div className="font-display text-2xl md:text-3xl text-[#F43F5E]">{s.metric}</div>
-                          <div className="text-[10px] uppercase tracking-[0.2em] text-[#A0A0A0] mt-1">{s.m1}</div>
+                          <div className="text-xs md:text-sm uppercase tracking-[0.25em] text-[#A0A0A0] mb-3">{s.client}</div>
+                          <p className="font-display text-lg md:text-xl lg:text-2xl leading-snug tracking-tight max-w-md">{s.story}</p>
                         </div>
-                        <div>
-                          <div className="font-display text-2xl md:text-3xl">{s.metric2}</div>
-                          <div className="text-[10px] uppercase tracking-[0.2em] text-[#A0A0A0] mt-1">{s.m2}</div>
+                        <div className="flex items-end justify-between gap-4">
+                          <div className="flex gap-8">
+                            <div>
+                              <div className="font-display text-2xl md:text-3xl text-[#F43F5E]">{s.metric}</div>
+                              <div className="text-[10px] uppercase tracking-[0.2em] text-[#A0A0A0] mt-1">{s.m1}</div>
+                            </div>
+                            <div>
+                              <div className="font-display text-2xl md:text-3xl">{s.metric2}</div>
+                              <div className="text-[10px] uppercase tracking-[0.2em] text-[#A0A0A0] mt-1">{s.m2}</div>
+                            </div>
+                          </div>
+                          <div className="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-[#F43F5E] group-hover:text-white transition-colors">
+                            <ArrowUpRight size={20} />
+                          </div>
                         </div>
                       </div>
-                      <div className="w-12 h-12 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-[#F43F5E] group-hover:text-white transition-colors">
-                        <ArrowUpRight size={20} />
-                      </div>
-                    </div>
-                  </div>
-                </motion.article>
-              ))}
+                    </CardWrapper>
+                  </motion.article>
+                );
+              })}
             </div>
           </div>
         </section>
