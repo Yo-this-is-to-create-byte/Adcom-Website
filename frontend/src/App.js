@@ -7,13 +7,26 @@ import Hero from '@/components/Hero';
 import Marquee from '@/components/Marquee';
 import Services from '@/components/Services';
 import CaseStudies from '@/components/CaseStudies';
-import Interlude from '@/components/Interlude';
 import WhyAdcom from '@/components/WhyAdcom';
 import Process from '@/components/Process';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import CustomCursor from '@/components/CustomCursor';
+import FAQ from '@/components/FAQ';
+import WhatsAppButton from '@/components/WhatsAppButton';
+import PerformanceMarketing from '@/pages/PerformanceMarketing';
+import GrowthMarketing from '@/pages/GrowthMarketing';
+import BrandStrategy from '@/pages/BrandStrategy';
+import AISEO from '@/pages/AISEO';
+import About from '@/pages/About';
+import ProcessPage from '@/pages/Process';
+import CaseStudiesPage from '@/pages/CaseStudiesPage';
+import Careers from '@/pages/Careers';
+import ContactPage from '@/pages/ContactPage';
+import Blog from '@/pages/Blog';
+import BlogPost from '@/pages/BlogPost';
+import CaseStudySharmaFurniture from '@/pages/CaseStudySharmaFurniture';
 
 function Landing() {
   return (
@@ -25,14 +38,10 @@ function Landing() {
         <Marquee />
         <Services />
         <CaseStudies />
-        <Interlude
-          kicker="Pause."
-          line="If your growth has plateaued — or hasn't started — the next move isn't another agency. It's a conversation."
-          cta="Book a strategy call"
-        />
         <WhyAdcom />
         <Process />
         <Testimonials />
+        <FAQ />
         <Contact />
       </main>
       <Footer />
@@ -44,8 +53,21 @@ function Landing() {
 function App() {
   return (
     <BrowserRouter>
+      <WhatsAppButton />
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/services/performance-marketing" element={<PerformanceMarketing />} />
+        <Route path="/services/growth-marketing" element={<GrowthMarketing />} />
+        <Route path="/services/brand-strategy" element={<BrandStrategy />} />
+        <Route path="/services/ai-seo" element={<AISEO />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/process" element={<ProcessPage />} />
+        <Route path="/case-studies" element={<CaseStudiesPage />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/case-studies/sharma-furniture" element={<CaseStudySharmaFurniture />} />
       </Routes>
     </BrowserRouter>
   );

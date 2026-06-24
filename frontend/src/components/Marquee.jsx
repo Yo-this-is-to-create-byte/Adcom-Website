@@ -10,7 +10,7 @@ export default function Marquee() {
   return (
     <section className="relative py-12 border-y border-[rgba(255,255,255,0.08)] overflow-hidden">
       <div className="text-xs uppercase tracking-[0.25em] text-[#A0A0A0] text-center mb-6">
-        A few of the brands we've quietly grown
+        Trusted by category-defining brands
       </div>
       <div className="relative">
         <motion.div

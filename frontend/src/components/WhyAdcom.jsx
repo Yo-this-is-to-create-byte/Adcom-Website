@@ -50,13 +50,13 @@ export default function WhyAdcom() {
           </div>
           <div className="lg:col-span-6 lg:col-start-7 flex flex-col gap-6">
             <p className="text-[18px] md:text-[20px] leading-relaxed text-[#A0A0A0]">
-              Adcom Media is a senior-only studio of growth strategists, performance marketers,
+              Adcom Media is a performance-driven studio of growth strategists, performance marketers,
               storytellers and engineers. We partner with category-defining brands across India,
-              the Middle East and the US — and we measure ourselves by the revenue we move.
+              the Middle East and the US, and we measure ourselves by the revenue we move.
             </p>
             <p className="text-[18px] md:text-[20px] leading-relaxed text-[#A0A0A0]">
-              No pods. No juniors. No vanity dashboards. Just relentless execution and
-              clean numbers in the only place that matters — your P&amp;L.
+              No pods. No trainees. No vanity dashboards. Just relentless execution and
+              clean numbers in the only place that matters, your P&amp;L.
             </p>
           </div>
         </div>

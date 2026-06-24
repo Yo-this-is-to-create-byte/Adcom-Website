@@ -1,8 +1,12 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+  "engines": {
+  "node": "20.x"
+},
   "private": true,
   "dependencies": {
+    "ajv": "^8.17.1",
     "@hookform/resolvers": "5.0.1",
     "@radix-ui/react-accordion": "1.2.8",
     "@radix-ui/react-alert-dialog": "1.1.11",
@@ -37,7 +41,7 @@
     "clsx": "2.1.1",
     "cmdk": "1.1.1",
     "cra-template": "1.2.0",
-    "date-fns": "4.1.0",
+    "date-fns": "^3.6.0",
     "dayjs": "1.11.13",
     "embla-carousel-react": "8.6.0",
     "framer-motion": "11.18.0",
@@ -78,6 +82,7 @@
     ]
   },
   "devDependencies": {
+    "ajv-keywords": "^5.1.0",
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@craco/craco": "7.1.0",
     "@emergentbase/visual-edits": "https://assets.emergent.sh/npm/emergentbase-visual-edits-1.0.8.tgz",

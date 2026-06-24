@@ -1,99 +1,170 @@
 import React from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Twitter, Linkedin, Instagram, ArrowUpRight } from 'lucide-react';
 import { FOOTER } from '@/constants/testIds';
 
-export default function Footer() {
-  return (
-    <footer className="relative pt-24 pb-10 border-t border-[rgba(255,255,255,0.08)] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-12 gap-10 pb-16">
-          <div className="lg:col-span-5">
-            <div className="text-xs uppercase tracking-[0.25em] text-[#A0A0A0] mb-6">Independent · Senior-only · Built in India</div>
-            <h3 className="font-display text-[40px] md:text-[56px] lg:text-[64px] leading-tight tracking-tight">
-              Quietly building the most<br />
-              <span className="text-white/40">ambitious brands online.</span>
-            </h3>
-          </div>
+const cols = [
+  {
+    title: 'Studio',
+    links: [
+      { label: 'Work', href: '#work' },
+      { label: 'Services', href: '#services' },
+      { label: 'Process', href: '/process' },
+      { label: 'About', href: '/about' },
+    ],
+  },
+  {
+    title: 'Services',
+    links: [
+      { label: 'Growth Marketing', href: '/services/growth-marketing' },
+      { label: 'Performance', href: '/services/performance-marketing' },
+      { label: 'Brand Strategy', href: '/services/brand-strategy' },
+      { label: 'AI SEO', href: '/services/ai-seo' },
+    ],
+  },
+  {
+    title: 'Connect',
+    links: [
+      { label: 'hello.adcommedia@gmail.com', href: 'mailto:hello.adcommedia@gmail.com' },
+      { label: 'Book a call', href: '/contact' },
+      { label: 'Blog', href: '/blog' },
+      { label: 'Careers', href: '/careers' },
+      { label: 'Press', href: '#press' },
+    ],
+  },
+];
 
-          <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
-            <FooterCol
-              title="Studio"
-              links={[
-                { label: 'Work', href: '#work' },
-                { label: 'Services', href: '#services' },
-                { label: 'Process', href: '#work' },
-                { label: 'About', href: '#about' },
-              ]}
-            />
-            <FooterCol
-              title="Services"
-              links={[
-                { label: 'Growth Marketing', href: '#services' },
-                { label: 'Performance', href: '#services' },
-                { label: 'Brand Strategy', href: '#services' },
-                { label: 'AI SEO', href: '#services' },
-              ]}
-            />
-            <FooterCol
-              title="Connect"
-              links={[
-                { label: 'hello@adcommedia.co', href: 'mailto:hello@adcommedia.co' },
-                { label: 'Book a call', href: '#contact' },
-                { label: 'Careers', href: '#contact' },
-                { label: 'Press', href: '#contact' },
-              ]}
-            />
+export default function Footer() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleClick = (e, href) => {
+    if (href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('http')) return;
+    e.preventDefault();
+    if (href.startsWith('/')) {
+      if (location.pathname === href) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        navigate(href);
+      }
+      return;
+    }
+    if (href.startsWith('#')) {
+      const id = href.slice(1);
+      if (location.pathname !== '/') {
+        navigate(`/#${id}`);
+        setTimeout(() => {
+          const el = document.getElementById(id);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 80);
+      } else {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  };
+
+  return (
+    <footer className="relative pt-32 pb-12 border-t border-[rgba(255,255,255,0.08)] overflow-hidden bg-black">
+      {/* Architectural line details */}
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#E11D2E]/50 to-transparent" />
+      <div className="absolute inset-y-0 left-1/4 w-px bg-gradient-to-b from-transparent via-white/[0.04] to-transparent hidden md:block" />
+      <div className="absolute inset-y-0 right-1/4 w-px bg-gradient-to-b from-transparent via-white/[0.04] to-transparent hidden md:block" />
+
+      {/* Subtle red lighting from below */}
+      <div
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] h-[400px] pointer-events-none opacity-50"
+        style={{
+          background:
+            'radial-gradient(ellipse at bottom, rgba(225,29,46,0.18) 0%, transparent 65%)',
+        }}
+      />
+
+      {/* Three columns */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        {/* Top kicker bar */}
+        <div className="flex items-center justify-between flex-wrap gap-4 pb-16 border-b border-[rgba(255,255,255,0.08)]">
+          <div className="text-[11px] font-mono uppercase tracking-[0.3em] text-[#A0A0A0] flex items-center gap-3">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#F43F5E] animate-pulse" />
+            Independent · Performance-Led · Built in India
+          </div>
+          <div className="text-[11px] font-mono uppercase tracking-[0.3em] text-[#A0A0A0]">
+            EST · 2025, Bengaluru / Dubai
           </div>
         </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 py-20">
+          {cols.map((col) => (
+            <div key={col.title}>
+              <div className="text-[11px] font-mono uppercase tracking-[0.35em] text-[#A0A0A0] mb-8">
+                {col.title}
+              </div>
+              <ul className="space-y-5 md:space-y-7">
+                {col.links.map((l) => (
+                  <li key={l.label}>
+                    <a
+                      href={l.href}
+                      onClick={(e) => handleClick(e, l.href)}
+                      className="group inline-flex items-center gap-2 text-[18px] md:text-[20px] font-display tracking-tight text-white/85 hover:text-white transition-colors"
+                    >
+                      {l.label}
+                      <ArrowUpRight
+                        size={16}
+                        className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-[#F43F5E]"
+                      />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Giant outlined ADCOM MEDIA, full viewport width, fits on one line */}
+      <div className="relative pt-16 pb-8 overflow-hidden w-full">
         <div
           data-testid={FOOTER.logo}
-          className="font-display tracking-tighter leading-none select-none text-[20vw] md:text-[18vw] lg:text-[16vw] text-white/95"
-          style={{ letterSpacing: '-0.06em' }}
+          aria-label="Adcom Media"
+          className="font-display tracking-tighter leading-[0.85] select-none text-center whitespace-nowrap px-2"
+          style={{
+            fontSize: 'clamp(28px, 11vw, 220px)',
+            letterSpacing: '-0.04em',
+            WebkitTextStroke: '1px rgba(255,255,255,0.85)',
+            WebkitTextFillColor: 'transparent',
+            color: 'transparent',
+            textShadow: '0 0 80px rgba(225,29,46,0.2)',
+          }}
         >
-          ADCOM
+          ADCOM&nbsp;MEDIA
         </div>
+        {/* Soft red underline glow */}
+        <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-[60%] h-px bg-gradient-to-r from-transparent via-[#E11D2E]/70 to-transparent" />
+      </div>
 
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mt-10 pt-8 border-t border-[rgba(255,255,255,0.08)]">
-          <div className="text-xs text-[#A0A0A0]">© {new Date().getFullYear()} Adcom Media. All rights reserved.</div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        {/* Bottom bar */}
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mt-12 pt-8 border-t border-[rgba(255,255,255,0.08)]">
+          <div className="text-[11px] font-mono uppercase tracking-[0.25em] text-[#A0A0A0]">
+            © {new Date().getFullYear()} Adcom Media. All rights reserved.
+          </div>
           <div className="flex items-center gap-3">
             <SocialLink testid={FOOTER.socialTwitter} href="https://twitter.com" label="Twitter">
-              <Twitter size={16} />
+              <Twitter size={15} />
             </SocialLink>
             <SocialLink testid={FOOTER.socialLinkedin} href="https://linkedin.com" label="LinkedIn">
-              <Linkedin size={16} />
+              <Linkedin size={15} />
             </SocialLink>
             <SocialLink testid={FOOTER.socialInstagram} href="https://instagram.com" label="Instagram">
-              <Instagram size={16} />
+              <Instagram size={15} />
             </SocialLink>
           </div>
-          <div className="text-xs text-[#A0A0A0] flex items-center gap-2">
-            Made with intent, in Bengaluru.
+          <div className="text-[11px] font-mono uppercase tracking-[0.25em] text-[#A0A0A0]">
+            Crafted with intent · Bengaluru
           </div>
         </div>
       </div>
     </footer>
-  );
-}
-
-function FooterCol({ title, links }) {
-  return (
-    <div>
-      <div className="text-xs uppercase tracking-[0.25em] text-[#A0A0A0] mb-5">{title}</div>
-      <ul className="space-y-3">
-        {links.map((l) => (
-          <li key={l.label}>
-            <a
-              href={l.href}
-              className="group inline-flex items-center gap-1.5 text-[15px] text-white/85 hover:text-white transition-colors"
-            >
-              {l.label}
-              <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition-all" />
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
   );
 }
 
